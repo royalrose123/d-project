@@ -211,27 +211,20 @@
 }
 
 .header-image {
-  height: 204px;
+  width: 100%;
+}
+
+.header-image.monster01 {
+max-width: 276px;
+}
+
+.header-image.monster02 {
+  max-width: 270px;
 }
 
 .header-image-item {
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
-}
-
-.header-image-item.monster01 {
-  width: 220px;
-  height: 100%;
-  background-image: url("../images/monster01.png");
-  background-size: cover;
-}
-
-.header-image-item.monster02 {
-  /* width: 200px;
-  height: 137px;
-  background-image: url("../images/monster02.png");
-  background-size: contain; */
+  width: 100%;
+  height: auto;
 }
 
 .header-level {
