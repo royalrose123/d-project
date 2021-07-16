@@ -374,9 +374,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px 0px;
+  padding-top: 16px;
   background-color: #ffffff;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .lesson-title {
@@ -414,8 +415,6 @@
 
 .lesson-unit {
   width: 100%;
-  padding-bottom: 20px;
-  background-color: rgba(237, 76, 124, 0.1);
 }
 
 .lesson-unit-image {
@@ -430,6 +429,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  background-color: rgba(237, 76, 124, 0.1);
+  padding-bottom: 20px;
 }
 
 .lesson-unit-info-title {
@@ -480,15 +481,249 @@
 
 /* lesson unit course */
 .lesson-unit-course {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px 40px 0px;
 }
 
+/* course */
 .course {
   display: flex;
   flex-direction: row;
 }
 
 .course-info {
+  min-width: 204px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 64px;
 }
 
+.course-info-content {
+  margin-top: 56px;
+  margin-right: 20px;
+}
+
+.course-info-content-status {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.course-info-content-status-check {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(207, 100%, 66%);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.course-info-content-status-check > img {
+  width: 16px;
+  height: 12px;
+}
+
+.course-info-content-status-text {
+  color: #707070;
+  font-size: 20px;
+}
+
+.course-info-content-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #707070;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.course-info-divider {
+  width: 1px;
+  height: 100%;
+  border-right: 0.5px dashed #cccccc;
+  position: relative;
+}
+
+.course-info-divider::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #50b1ff;
+  border-radius: 50%;
+  position: absolute;
+  top: 92px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 對於深色的 course 做不同 style - start*/
+.course.dark .course-info {
+  padding-right: 20px;
+}
+.course.dark .course-info-content-status-text {
+  color: #cccccc;
+  font-size: 20px;
+}
+
+.course.dark .course-info-content-time {
+  color: #50b1ff;
+  font-size: 20px;
+}
+
+.course.dark .course-info-divider {
+  display: none;
+}
+/* 對於深色的 course 做不同 style - end */
+
+/* 對於未出席的 course 做不同 style - start */
+.course[data-is-attend="false"] .course-info-content-status-check {
+  background-color: #cccccc;
+}
+.course[data-is-attend="false"] .course-info-divider::before {
+  background-color: #cccccc;
+}
+/* 對於未出席的 course 做不同 style - end */
+
+/* course-card - start */
+/* 可以抽出 course-card 與其他頁面共用*/
 .course-card {
+  width: 100%;
+  max-width: 520px;
+  min-height: 260px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 0 rgba(119, 119, 119, 0.16);
+  background-color: #ffffff;
+  padding: 14px;
+  padding-bottom: 22px;
+  margin-top: 4px;
+}
+
+.course-card-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 28px;
+}
+
+.course-card-info-image {
+  width: 100%;
+  max-width: 220px;
+  height: 165px;
+}
+
+.course-card-info-image > img {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.course-card-info-content {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 12px;
+}
+
+.course-card-info-content-tag {
+  width: 100%;
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-bottom: 6px;
+}
+
+.course-card-info-content-tag > p {
+  color: #50b1ff;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  margin-right: 12px;
+}
+
+.course-card-info-content-tag > p:not(:last-child):before {
+  content: "";
+  width: 0.5px;
+  height: 10px;
+  background-color: #cccccc;
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.course-card-info-content-text {
+  flex: 1;
+  font-size: 20px;
+  color: #707070;
+  font-weight: bold;
+}
+
+.course-card-info-content-teacher {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.course-card-info-content-teacher-avatar {
+  max-width: 45px;
+  margin-right: 8px;
+}
+
+.course-card-info-content-teacher-avatar > img {
+  width: 100%;
+  height: 100%;
+}
+
+.course-card-action {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.course-card-action > button:not(:last-child) {
+  margin-right: 8px;
+}
+/* course-card - end */
+
+/* 為了跟其他頁面的 course 做區隔所以加上 lesson  */
+.lesson .course:not(:last-child) .course-card {
+  margin-bottom: 30px;
+}
+
+/* lesson enhance course */
+.lesson-enhance {
+  width: 100%;
+  background-color: #36789b;
+}
+
+.lesson-enhance-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.lesson-enhance-title-text {
+  width: 184px;
+  height: 42px;
+  background-color: #2299ee;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  line-height: 42px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.lesson-enhance-course {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px 40px 0px;
 }
