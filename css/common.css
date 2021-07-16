@@ -1,9 +1,9 @@
 /* button */
 /* size */
 /* xs = 150px */
-/* s = 155px */
-/* m = 160px */
-/* l = 190px */
+/* sm = 155px */
+/* md = 160px */
+/* lg = 190px */
 /* full = 100% */
 
 .button {
@@ -35,13 +35,13 @@
 .button.xs {
   max-width: 150px;
 }
-.button.s {
+.button.sm {
   max-width: 155px;
 }
-.button.m {
+.button.md {
   max-width: 160px;
 }
-.button.l {
+.button.lg {
   max-width: 190px;
 }
 .button.full {
@@ -55,14 +55,27 @@
 }
 
 /* carousel icon */
+/* size */
+/* sm = w: 62px, H: 124p */
+/* md = w: 62px, H: 124px */
+
 .carousel-icon {
-  width: 62px;
-  height: 124px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   position: absolute;
   cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-icon.sm {
+  width: 42px;
+  height: 86px;
+}
+
+.carousel-icon.md {
+  width: 62px;
+  height: 124px;
 }
 
 .carousel-icon.previous {

@@ -61,7 +61,7 @@
               </div>
 
               <div class="calendar-body-item">
-                <p class="calendar-body-item-text day"></p>
+                <p class="calendar-body-item-text day empty"></p>
                 <div class="calendar-dot" data-is-marked="false"></div>
                 <div class="calendar-body-item-more" data-is-more="false">
                   <div class="calendar-dot"></div>
@@ -71,7 +71,7 @@
               </div>
 
               <div class="calendar-body-item">
-                <p class="calendar-body-item-text day"></p>
+                <p class="calendar-body-item-text day empty"></p>
                 <div class="calendar-dot" data-is-marked="false"></div>
                 <div class="calendar-body-item-more" data-is-more="false">
                   <div class="calendar-dot"></div>
@@ -81,7 +81,7 @@
               </div>
 
               <div class="calendar-body-item">
-                <p class="calendar-body-item-text day"></p>
+                <p class="calendar-body-item-text day empty"></p>
                 <div class="calendar-dot" data-is-marked="false"></div>
                 <div class="calendar-body-item-more" data-is-more="false">
                   <div class="calendar-dot"></div>
@@ -401,6 +401,20 @@
               </div>
             </div>
           </div>
+          <button class="button full">
+            <img class="button-icon" src="images/btn_booking.svg" />
+            <p>預定課程</p>
+          </button>
+          <div class="banner">
+            <div class="banner-image">
+              <img src="images/banner.png" />
+            </div>
+            <div class="banner-dot">
+              <div class="banner-dot-item"></div>
+              <div class="banner-dot-item"></div>
+              <div class="banner-dot-item"></div>
+            </div>
+          </div>
         </div>
         <div class="right">
           <!-- tab -->
@@ -424,7 +438,9 @@
               <img class="header-image-item" src="images/monster01.png" />
             </div>
             <div class="header-level">
-              <div class="header-level-image"></div>
+              <div class="header-level-image">
+                <img src="images/level_title.svg" />
+              </div>
               <div class="header-level-title">你的學習等級</div>
               <div class="header-level-text">一年級</div>
             </div>
@@ -443,8 +459,37 @@
             <span class="lesson-title">9月課程</span>
             <!-- carousel -->
             <div class="lesson-carousel">
-              <div class="carousel-icon previous"></div>
-              <div class="carousel-icon next"></div>
+              <div class="carousel-icon md previous"></div>
+              <div class="carousel-icon md next"></div>
+              <div class="lesson-carousel-content">
+                <div class="lesson-carousel-content-item">
+                  <p>上個月</p>
+                </div>
+                <div class="lesson-carousel-content-unit">
+                  <div class="lesson-carousel-content-unit-item active">
+                    <div class="lesson-carousel-content-unit-item-dot"></div>
+                    <p class="lesson-carousel-content-unit-item-text">Unit 1</p>
+                  </div>
+
+                  <div class="lesson-carousel-content-unit-item">
+                    <div class="lesson-carousel-content-unit-item-dot"></div>
+                    <p class="lesson-carousel-content-unit-item-text">Unit 2</p>
+                  </div>
+
+                  <div class="lesson-carousel-content-unit-item">
+                    <div class="lesson-carousel-content-unit-item-dot"></div>
+                    <p class="lesson-carousel-content-unit-item-text">Unit 3</p>
+                  </div>
+
+                  <div class="lesson-carousel-content-unit-item">
+                    <div class="lesson-carousel-content-unit-item-dot"></div>
+                    <p class="lesson-carousel-content-unit-item-text">Unit 4</p>
+                  </div>
+                </div>
+                <div class="lesson-carousel-content-item">
+                  <p>下個月</p>
+                </div>
+              </div>
             </div>
 
             <!-- lesson-unit -->
@@ -515,7 +560,7 @@
                         <img class="button-icon" src="images/btn_review.svg" />
                         <p>複習課程</p>
                       </button>
-                      <button class="button s">
+                      <button class="button sm">
                         <img class="button-icon" src="images/btn_again.svg" />
                         <p>再學一次</p>
                       </button>
@@ -573,7 +618,7 @@
                         <img class="button-icon" src="images/btn_review.svg" />
                         <p>複習課程</p>
                       </button>
-                      <button class="button s">
+                      <button class="button sm">
                         <img class="button-icon" src="images/btn_again.svg" />
                         <p>再學一次</p>
                       </button>
@@ -638,7 +683,7 @@
                         <img class="button-icon" src="images/btn_review.svg" />
                         <p>複習課程</p>
                       </button>
-                      <button class="button s">
+                      <button class="button sm">
                         <img class="button-icon" src="images/btn_again.svg" />
                         <p>再學一次</p>
                       </button>
@@ -696,12 +741,133 @@
                         <img class="button-icon" src="images/btn_review.svg" />
                         <p>複習課程</p>
                       </button>
-                      <button class="button s">
+                      <button class="button sm">
                         <img class="button-icon" src="images/btn_again.svg" />
                         <p>再學一次</p>
                       </button>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="story">
+            <div class="story-header">
+              <div class="story-header-image toy01">
+                <img class="story-header-image-item" src="images/toy01.png" />
+              </div>
+              <div class="story-header-title">
+                <div class="story-header-title-image">
+                  <img src="images/sps_title.svg" />
+                </div>
+                <div class="story-header-title-text">迪士尼故事館</div>
+              </div>
+              <div class="story-header-image toy02">
+                <img class="story-header-image-item" src="images/toy02.png" />
+              </div>
+            </div>
+            <div class="story-content">
+              <div
+                class="story-content-carousel carousel-icon sm previous"
+              ></div>
+              <div class="story-content-carousel carousel-icon sm next"></div>
+              <div class="story-course">
+                <div class="story-course-image">
+                  <img src="images/toy03.png" />
+                </div>
+                <div class="story-course-card">
+                  <div class="story-course-card-info">
+                    <p class="story-course-card-info-time">2021/9/14 13:30</p>
+                    <p class="story-course-card-info-name">
+                      Conversation About: Meeting New People
+                    </p>
+                    <div class="story-course-card-teacher">
+                      <p class="story-course-card-teacher-name">Karla C</p>
+                      <div class="story-course-card-teacher-avatar">
+                        <img src="images/teacher_img.png" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="story-course-card-image">
+                    <img src="images/course_img.png" />
+                  </div>
+                  <div class="story-course-card-tag">
+                    <p>一年級</p>
+                    <p>45 mins</p>
+                    <p>CCSS</p>
+                    <p>一對四</p>
+                  </div>
+                  <button class="button lg">
+                    <img class="button-icon" src="images/btn_booking.svg" />
+                    <p>預定課程</p>
+                  </button>
+                </div>
+              </div>
+
+              <div class="story-course">
+                <div class="story-course-image">
+                  <img src="images/toy03.png" />
+                </div>
+                <div class="story-course-card">
+                  <div class="story-course-card-info">
+                    <p class="story-course-card-info-time">2021/9/14 13:30</p>
+                    <p class="story-course-card-info-name">
+                      Conversation About: Meeting New People
+                    </p>
+                    <div class="story-course-card-teacher">
+                      <p class="story-course-card-teacher-name">Karla C</p>
+                      <div class="story-course-card-teacher-avatar">
+                        <img src="images/teacher_img.png" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="story-course-card-image">
+                    <img src="images/course_img.png" />
+                  </div>
+                  <div class="story-course-card-tag">
+                    <p>一年級</p>
+                    <p>45 mins</p>
+                    <p>CCSS</p>
+                    <p>一對四</p>
+                  </div>
+                  <button class="button lg">
+                    <img class="button-icon" src="images/btn_booking.svg" />
+                    <p>預定課程</p>
+                  </button>
+                </div>
+              </div>
+
+              <div class="story-course">
+                <div class="story-course-image">
+                  <img src="images/toy03.png" />
+                </div>
+                <div class="story-course-card">
+                  <div class="story-course-card-info">
+                    <p class="story-course-card-info-time">2021/9/14 13:30</p>
+                    <p class="story-course-card-info-name">
+                      Conversation About: Meeting New People
+                    </p>
+                    <div class="story-course-card-teacher">
+                      <p class="story-course-card-teacher-name">Karla C</p>
+                      <div class="story-course-card-teacher-avatar">
+                        <img src="images/teacher_img.png" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="story-course-card-image">
+                    <img src="images/course_img.png" />
+                  </div>
+                  <div class="story-course-card-tag">
+                    <p>一年級</p>
+                    <p>45 mins</p>
+                    <p>CCSS</p>
+                    <p>一對四</p>
+                  </div>
+                  <button class="button lg">
+                    <img class="button-icon" src="images/btn_booking.svg" />
+                    <p>預定課程</p>
+                  </button>
                 </div>
               </div>
             </div>
