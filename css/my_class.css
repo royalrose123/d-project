@@ -23,7 +23,7 @@
 
 .left {
   width: 356px;
-  height: auto;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   margin-top: 244px;
@@ -392,25 +392,6 @@
   flex-direction: row;
   position: relative;
   margin-bottom: 36px;
-}
-
-.lesson-carousel-icon {
-  width: 62px;
-  height: 124px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: absolute;
-}
-
-.lesson-carousel-icon.previous {
-  background-image: url("../images/btn_time_l.svg");
-  left: 0px;
-}
-
-.lesson-carousel-icon.next {
-  background-image: url("../images/btn_time_r.svg");
-  right: 0px;
 }
 
 .lesson-unit {
