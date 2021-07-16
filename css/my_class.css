@@ -894,6 +894,32 @@
   background-repeat: no-repeat;
 }
 
+.story-content-image {
+  position: absolute;
+}
+
+.story-content-image.image01 {
+  width: 100%;
+  max-width: 102px;
+  left: 168px;
+  bottom: -40px;
+}
+
+.story-content-image.image01 > img {
+  width: 100%;
+}
+
+.story-content-image.image02 {
+  width: 100%;
+  max-width: 70px;
+  right: -40px;
+  top: 74px;
+}
+
+.story-content-image.image02 > img {
+  width: 100%;
+}
+
 .story-content-carousel {
   top: 40%;
 }
