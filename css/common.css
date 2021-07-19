@@ -154,7 +154,7 @@
 
 .course-card-info-content-tag {
   width: 100%;
-  height: 22px;
+  min-height: 22px;
   display: flex;
   flex-direction: row;
   align-content: center;

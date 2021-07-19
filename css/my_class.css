@@ -2,13 +2,14 @@
   width: 100%;
   height: 100%;
   background-color: #e8f5ff;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 
 .container {
   width: 100%;
   max-width: 1920px;
-  padding: 108px 80px;
+  padding: 108px 28px;
 }
 
 .my-class {
@@ -23,8 +24,14 @@
 /* left */
 
 .left {
-  width: 356px;
   height: fit-content;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.left-wrapper {
+  width: 356px;
   display: flex;
   flex-direction: column;
   margin-top: 316px;
@@ -32,8 +39,9 @@
   padding: 30px 18px;
   background-color: #ffffff;
   border-radius: 20px;
+  position: relative;
+  z-index: 10;
 }
-
 /* calendar */
 .calendar {
   width: 100%;
@@ -242,11 +250,53 @@
   cursor: pointer;
 }
 
+.schedule {
+  width: 420px;
+  height: 940px;
+  padding: 20px 50px 20px 58px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 332px;
+  z-index: 9;
+}
+
+.schedule-top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 28px;
+}
+
+.schedule-wrapper {
+}
+
+.schedule-item {
+}
+
+.schedule-item-header {
+  width: 312px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0px 28px;
+  background-color: #50b1ff;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.schedule-item-course {
+}
+
+/* left end*/
+
 /* right */
 
 .right {
   width: calc(100% - 388px);
-  max-width: 1200px;
+  max-width: 980px;
   display: flex;
   flex-direction: column;
 }
@@ -452,7 +502,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0px 90px;
   transform: translateY(20px);
@@ -460,10 +510,9 @@
 }
 
 .lesson-carousel-content-unit {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  /* transform: translateY(20px); */
-  /* flex: 1; */
 }
 
 .lesson-carousel-content-unit-item {
@@ -471,8 +520,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0px 40px;
   position: relative;
+  flex: 1;
 }
 
 .lesson-carousel-content-unit-item.active
@@ -521,16 +570,8 @@
 
 .lesson-carousel-content-unit-item-text {
   color: #707070;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
-}
-
-.lesson-carousel-content-item {
-}
-
-.lesson-carousel-content-item > p {
-  color: #707070;
-  font-size: 20px;
 }
 
 .lesson-unit {
@@ -792,12 +833,12 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 28px 52px 96px 52px;
   background-color: #bde3fa;
   border-radius: 20px;
   position: relative;
-
   background-image: url("../images/bg_story.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -831,6 +872,12 @@
 
 .story-content-carousel {
   top: 40%;
+}
+
+.story-course-wrapper {
+  flex-basis: 386px;
+  display: flex;
+  justify-content: center;
 }
 
 .story-course {
