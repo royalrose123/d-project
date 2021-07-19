@@ -104,16 +104,6 @@
   border-radius: 18px;
   color: #707070;
   cursor: pointer;
-
-  appearance: none;
-
-  border: none;
-  margin: 0;
-  width: 100%;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: inherit;
-  line-height: inherit;
 }
 
 .arrow {
