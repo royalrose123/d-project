@@ -157,6 +157,7 @@
   min-height: 22px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-content: center;
   margin-bottom: 6px;
 }

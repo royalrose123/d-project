@@ -257,8 +257,8 @@
   cursor: pointer;
 }
 
-.schedule {
-  width: 420px;
+.left-popup {
+  width: 100vw;
   height: 940px;
   padding: 20px 50px 20px 58px;
   background-color: #f5f5f5;
@@ -267,6 +267,11 @@
   bottom: 0px;
   left: 332px;
   z-index: 9;
+}
+
+/* schedule start */
+.schedule {
+  width: 420px;
 }
 
 .schedule-top {
@@ -402,6 +407,376 @@
   font-size: 12px;
   margin-left: 6px;
 }
+/* schedule end */
+
+/* reserve start */
+.reserve {
+  max-width: 680px;
+  /* padding-left: 20px 50px 20px 58px; */
+  padding-left: 66px;
+}
+
+.reserve-title {
+  color: #50b1ff;
+  font-size: 30px;
+}
+
+.reserve-action {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+
+.reserve-action-select {
+  width: 100%;
+  max-width: 150px;
+  display: flex;
+  height: 36px;
+  justify-content: center;
+  margin-top: 22px;
+  position: relative;
+}
+
+.reserve-action-select > select {
+  width: 100%;
+  height: 100%;
+  padding: 7px 16px 7px 20px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  color: #707070;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 14px;
+  height: 8px;
+  background-image: url("../images/arrow_down.svg");
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}
+
+.reserve-action-select > select > option {
+  position: absolute;
+  bottom: 80px;
+}
+
+.reserve-content {
+  max-height: calc(100% - 228px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 16px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.reserve-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.reserve-item-left {
+  margin-right: 20px;
+}
+
+.reserve-item-left-line {
+  height: 100%;
+  border-right: dashed 0.5px #cccccc;
+  position: relative;
+  margin-top: 6px;
+}
+
+.reserve-item-left-line::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #50b1ff;
+  position: absolute;
+  top: 0px;
+  left: -6px;
+}
+
+.reserve-item-right {
+  width: 100%;
+  /* margin-bottom: 28px; */
+}
+
+.reserve-item:last-of-type .reserve-item-right {
+  /* margin-bottom: 12px; */
+}
+
+.reserve-item-right-time {
+  margin-bottom: 10px;
+  color: #707070;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.reserve-course {
+  width: 100%;
+  max-width: 500px;
+  min-height: 220px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 0 rgba(119, 119, 119, 0.16);
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.reserve-course:last-of-type {
+  margin-bottom: 32px;
+}
+
+.reserve-course-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 14px;
+}
+
+.reserve-course-info-image {
+  width: 100%;
+  max-width: 192px;
+  height: 144px;
+}
+
+.reserve-course-info-image > img {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.reserve-course-info-content {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 12px;
+}
+
+.reserve-course-info-content-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.reserve-course-info-content-top-type {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  margin-bottom: 4px;
+  border-radius: 5px;
+  background-color: #50b1ff;
+  text-align: center;
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.reserve-course-info-content-top-time {
+  color: #2196f3;
+  font-size: 18px;
+}
+
+.reserve-course-info-content-text {
+  flex: 1;
+  font-size: 20px;
+  color: #707070;
+  font-weight: bold;
+}
+
+.reserve-course-info-content-teacher {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.reserve-course-info-content-teacher-avatar {
+  max-width: 45px;
+  margin-right: 8px;
+}
+
+.reserve-course-info-content-teacher-avatar > img {
+  width: 100%;
+  height: 100%;
+}
+
+.reserve-course-action-tag {
+  width: 100%;
+  min-height: 22px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.reserve-course-action-tag > p {
+  color: #50b1ff;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  margin-right: 12px;
+}
+
+.reserve-course-action-tag > p:not(:last-child):before {
+  content: "";
+  width: 0.5px;
+  height: 10px;
+  background-color: #cccccc;
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.reserve-course-action {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  padding: 14px;
+  padding-bottom: 22px;
+}
+
+.reserve-course-action > button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.reserve-card {
+  width: 100%;
+  max-width: 500px;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 16px 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 0 rgba(119, 119, 119, 0.16);
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.reserve-card:last-of-type {
+  margin-bottom: 12px;
+}
+
+.reserve-card-booked {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.reserve-card-booked-icon {
+  width: 18px;
+  height: 30px;
+  margin: 0px 4px;
+}
+
+.reserve-card-booked-icon > img {
+  width: 100%;
+  height: 100%;
+}
+
+.reserve-card-booked-text {
+  flex: 1;
+  color: #707070;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.reserve-card-booking {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.reserve-card-booking-type {
+  width: 78px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 8px;
+  border-radius: 10px;
+  background-color: #e8f5ff;
+}
+
+.reserve-card-booking-type > p {
+  color: #50b1ff;
+  font-size: 22px;
+  text-align: center;
+}
+
+.reserve-card-booking-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0px 12px;
+}
+
+.reserve-card-booking-content-tag {
+  width: 100%;
+  min-height: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.reserve-card-booking-content-tag > p {
+  color: #2196f3;
+  font-size: 18px;
+  line-height: 24px;
+  position: relative;
+  margin-right: 16px;
+}
+
+.reserve-card-booking-content-tag > p:not(:last-child):before {
+  content: "";
+  width: 0.5px;
+  height: 10px;
+  background-color: #cccccc;
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.reserve-card-booking-content-tag > p:last-child {
+  margin-right: 0px;
+}
+
+.reserve-card-booking-content-name {
+  color: #707070;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.reserve-card[data-is-booked="true"] .reserve-card-booking {
+  display: none;
+}
+
+.reserve-card[data-is-booked="false"] .reserve-card-booked {
+  display: none;
+}
+
+.reserve-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-left: 36px;
+}
+
+.reserve-bottom-text {
+  color: #707070;
+  font-size: 16px;
+}
+
+/* reserve end */
+
 /* left end*/
 
 /* right */
