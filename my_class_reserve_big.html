@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/common.css" />
     <link rel="stylesheet" type="text/css" href="css/my_class.css" />
+    <link rel="stylesheet" href="css/nice-select2.css" />
+    <script src="js/nice-select2.js"></script>
   </head>
   <body>
     <div class="layout">
@@ -420,33 +422,24 @@
           <div class="left-popup reserve">
             <p class="reserve-title">預訂課程</p>
             <div class="reserve-action">
-              <div class="reserve-action-select">
-                <select>
-                  <option value="2021/05/13">2021/05/13</option>
-                  <option value="2021/06/13">2021/06/13</option>
-                  <option value="2021/07/13">2021/07/13</option>
-                  <option value="2021/08/13">2021/08/13</option>
-                </select>
-                <div class="arrow"></div>
-              </div>
+              <select class="select-tool reserve-action-select xs">
+                <option selected value="2021/05/13">2021/05/13</option>
+                <option value="2021/06/13">2021/06/13</option>
+                <option value="2021/07/13">2021/07/13</option>
+                <option value="2021/08/13">2021/08/13</option>
+              </select>
 
-              <div class="reserve-action-select">
-                <select>
-                  <option value="10:00-11:00">10:00-11:00</option>
-                  <option value="11:00-12:00">11:00-12:00</option>
-                  <option value="12:00-13:00">12:00-13:00</option>
-                  <option value="13:00-14:00">13:00-14:00</option>
-                </select>
-                <div class="arrow"></div>
-              </div>
+              <select class="select-tool reserve-action-select xs">
+                <option selected value="10:00-11:00">10:00-11:00</option>
+                <option value="11:00-12:00">11:00-12:00</option>
+                <option value="12:00-13:00">12:00-13:00</option>
+                <option value="13:00-14:00">13:00-14:00</option>
+              </select>
 
-              <div class="reserve-action-select">
-                <select>
-                  <option value="知識大會堂">知識大會堂</option>
-                  <option value="小班互動課">小班互動課</option>
-                </select>
-                <div class="arrow"></div>
-              </div>
+              <select class="select-tool reserve-action-select xs">
+                <option selected value="知識大會堂">知識大會堂</option>
+                <option value="小班互動課">小班互動課</option>
+              </select>
             </div>
             <div class="reserve-content">
               <div class="reserve-item">
@@ -1005,5 +998,13 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const elements = document.querySelectorAll(".select-tool");
+
+      elements.forEach(function (select) {
+        NiceSelect.bind(select);
+      });
+    </script>
   </body>
 </html>

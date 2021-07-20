@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/common.css" />
     <link rel="stylesheet" type="text/css" href="css/update_level.css" />
+    <link rel="stylesheet" href="css/nice-select2.css" />
+    <script src="js/nice-select2.js"></script>
   </head>
   <body>
     <div class="layout">
@@ -30,15 +32,12 @@
           <p class="body-text level-text">一年級</p>
           <p class="body-text update-level">想要調整等級</p>
 
-          <div class="level-select">
-            <select>
-              <option value="三年級">三年級</option>
-              <option value="四年級">四年級</option>
-              <option value="五年級">五年級</option>
-              <option value="六年級">六年級</option>
-            </select>
-            <div class="arrow"></div>
-          </div>
+          <select class="level-select select-tool sm dark">
+            <option selected value="三年級">三年級</option>
+            <option value="四年級">四年級</option>
+            <option value="五年級">五年級</option>
+            <option value="六年級">六年級</option>
+          </select>
 
           <div class="action">
             <button class="action-button button lg">
@@ -51,5 +50,13 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const elements = document.querySelectorAll(".select-tool");
+
+      elements.forEach(function (select) {
+        NiceSelect.bind(select);
+      });
+    </script>
   </body>
 </html>

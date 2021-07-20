@@ -424,37 +424,7 @@
 .reserve-action {
   display: flex;
   flex-direction: row;
-  margin-bottom: 16px;
-}
-
-.reserve-action-select {
-  width: 100%;
-  max-width: 150px;
-  display: flex;
-  height: 36px;
-  justify-content: center;
-  margin-top: 22px;
-  position: relative;
-}
-
-.reserve-action-select > select {
-  width: 100%;
-  height: 100%;
-  padding: 7px 16px 7px 20px;
-  background-color: #ffffff;
-  border-radius: 18px;
-  color: #707070;
-  cursor: pointer;
-}
-
-.arrow {
-  width: 14px;
-  height: 8px;
-  background-image: url("../images/arrow_down.svg");
-  position: absolute;
-  top: 50%;
-  right: 16px;
-  transform: translateY(-50%);
+  margin: 16px 0px;
 }
 
 .reserve-action-select > select > option {
@@ -470,6 +440,10 @@
   padding-left: 16px;
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+.reserve-action-select {
+  margin-right: 8px;
 }
 
 .reserve-item {
