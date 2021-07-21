@@ -20,12 +20,14 @@
   background-color: #ffffff;
   border-radius: 20px;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 /* update-time-modal rwd */
 @media (max-width: 767px) {
   .update-time-modal {
     max-width: 100%;
+    min-height: 100%;
     height: 100%;
     border-radius: 0px;
   }
@@ -305,4 +307,15 @@
   color: #707070;
   font-size: 18px;
   text-align: center;
+}
+
+/* update-time rwd */
+@media (max-width: 767px) {
+  .update-time-time {
+    font-size: 18px;
+  }
+
+  .comment > p {
+    font-size: 14px;
+  }
 }
