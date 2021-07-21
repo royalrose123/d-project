@@ -14,7 +14,7 @@
 
 @media (max-width: 767px) {
   .container {
-    padding: 108px 10px;
+    padding: 60px 10px 108px 10px;
   }
 }
 
@@ -24,6 +24,72 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.my-class-header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+}
+
+.my-class-header-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #50b1ff;
+  flex: 1;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.my-class-header-item:not(:last-child) {
+  border-right: 0.5px solid #ffffff;
+}
+.my-class-header-item:hover {
+  background-color: #2299ee;
+}
+.my-class-header-item.disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.my-class-header-item-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 12px;
+}
+
+.my-class-header-item-icon > img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .my-class-header {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .my-class-header {
+    height: 40px;
+  }
+
+  .my-class-header-item {
+    font-size: 16px;
+  }
+
+  .my-class-header-item-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 /* my-class rwd */
@@ -51,16 +117,105 @@
   z-index: 10;
 }
 
+.left-popup {
+  width: 100vw;
+  height: 940px;
+  padding: 20px 50px 20px 58px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 332px;
+  z-index: 9;
+}
+
+.left-popup-wrapper {
+  height: 100%;
+}
+
 /* left rwd */
 @media (min-width: 1440px) {
   .left-wrapper {
     margin-right: 32px;
   }
+
+  /* .left-popup {
+    width: 100%;
+  } */
 }
 
 @media (max-width: 1023px) {
   .left {
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    left: 0px;
+    top: 60px;
+  }
+
+  .left[data-type=""] {
     display: none;
+  }
+
+  .left-wrapper {
+    display: none;
+    width: 100%;
+    margin-top: 0px;
+    align-items: center;
+    padding: 24px 8px 20px 8px;
+    border-radius: 0px;
+  }
+
+  .left[data-type="schedule"] .left-wrapper {
+    display: flex;
+  }
+
+  .left-wrapper .calendar {
+    max-width: 380px;
+  }
+
+  .left-popup {
+    height: 100%;
+    position: initial;
+  }
+
+  .left-popup-wrapper {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+  }
+
+  .left .left-button,
+  .left .banner {
+    display: none;
+  }
+
+  .left-popup.schedule {
+    padding-top: 40px;
+    border-radius: 0px;
+  }
+
+  .left-popup.reserve {
+    border-radius: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .left {
+    top: 40px;
+  }
+
+  .left-wrapper {
+    padding-bottom: 0px;
+  }
+
+  .left-popup.schedule {
+    padding: 16px;
+  }
+
+  .left-popup.reserve {
+    padding: 12px;
   }
 }
 
@@ -215,6 +370,42 @@
   display: none;
 }
 
+@media (max-width: 1023px) {
+  .calendar-title {
+    display: none;
+  }
+
+  .calendar-time {
+    margin-bottom: 20px;
+  }
+
+  .calendar-time .calendar-time-text {
+    font-size: 20px;
+  }
+
+  .calendar-header-text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .calendar {
+    margin-bottom: 12px;
+  }
+
+  .calendar-time {
+    margin-bottom: 12px;
+  }
+
+  .calendar-time .calendar-time-text {
+    font-size: 18px;
+  }
+
+  .calendar-header-text {
+    font-size: 20px;
+  }
+}
+
 .plus {
   margin: 0px 2px;
   width: 6px;
@@ -274,18 +465,6 @@
   cursor: pointer;
 }
 
-.left-popup {
-  width: 100vw;
-  height: 940px;
-  padding: 20px 50px 20px 58px;
-  background-color: #f5f5f5;
-  border-radius: 20px;
-  position: absolute;
-  bottom: 0px;
-  left: 332px;
-  z-index: 9;
-}
-
 /* schedule start */
 .schedule {
   width: 420px;
@@ -300,6 +479,7 @@
 
 .schedule-wrapper {
   height: calc(100% - 78px);
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 
@@ -424,11 +604,37 @@
   font-size: 12px;
   margin-left: 6px;
 }
+
+/* schedule rwd */
+@media (max-width: 1023px) {
+  .schedule {
+    width: 100%;
+  }
+
+  .schedule-top {
+    display: none;
+  }
+
+  .schedule-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .schedule-item-header {
+    width: 100%;
+    max-width: 488px;
+  }
+
+  .schedule-item-course {
+    width: 100%;
+    max-width: 488px;
+  }
+}
 /* schedule end */
 
 /* reserve start */
 .reserve {
-  max-width: 680px;
+  max-width: 660px;
   padding-left: 66px;
 }
 
@@ -492,10 +698,6 @@
 
 .reserve-item-right {
   width: 100%;
-}
-
-.reserve-item:last-of-type .reserve-item-right {
-  /* margin-bottom: 12px; */
 }
 
 .reserve-item-right-time {
@@ -579,6 +781,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  color: #707070;
 }
 
 .reserve-course-info-content-teacher-avatar {
@@ -762,6 +965,154 @@
 .reserve-bottom-text {
   color: #707070;
   font-size: 16px;
+}
+
+@media (max-width: 1023px) {
+  .reserve {
+    max-width: 100%;
+  }
+
+  .reserve-content {
+    overflow-y: hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  .reserve-title {
+    font-size: 20px;
+  }
+
+  .reserve-content {
+    padding-left: 8px;
+  }
+
+  .reserve-item-left {
+    margin-right: 12px;
+  }
+
+  .reserve-item-right-time {
+    font-size: 16px;
+  }
+
+  .reserve-card-booked-text {
+    font-size: 14px;
+  }
+
+  .reserve-card-booked-icon {
+    width: 12px;
+    height: 24px;
+  }
+
+  .reserve-card-booking-type {
+    width: 48px;
+    height: 40px;
+  }
+  .reserve-card-booking-type > p {
+    font-size: 14px;
+  }
+
+  .reserve-card-booking-content-tag > p {
+    font-size: 12px;
+  }
+
+  .reserve-card-booking-content-name {
+    font-size: 14px;
+  }
+
+  /* reserve card button */
+  .reserve-card-booking button,
+  .reserve-card-booked button {
+    font-size: 12px;
+  }
+
+  .reserve-card-booking button.md,
+  .reserve-card-booked button.md {
+    max-width: 72px;
+    height: 32px;
+  }
+
+  .reserve-card-booking button.lg,
+  .reserve-card-booked button.lg {
+    max-width: 72px;
+    height: 32px;
+  }
+
+  .reserve-card-booking button .button-icon,
+  .reserve-card-booked button .button-icon {
+    display: none;
+  }
+
+  .reserve-course {
+    /* max-width: 300px; */
+  }
+
+  .reserve-course-info {
+    padding: 8px;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+  }
+
+  .reserve-course-info-content-top {
+    justify-content: center;
+  }
+
+  .reserve-course-info-content-top-time {
+    font-size: 14px;
+  }
+
+  .reserve-course-info-content-teacher {
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%);
+  }
+
+  .reserve-course-info-content-teacher-avatar {
+    margin-right: 0px;
+  }
+
+  .reserve-course-info-content-text {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+
+  .reserve-course-info-image {
+    max-width: 144px;
+    height: 108px;
+    margin-bottom: 20px;
+  }
+
+  .reserve-course-action {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 12px;
+  }
+
+  .reserve-course-action button.lg {
+    max-width: 120px;
+    font-size: 14px;
+    height: 32px;
+  }
+
+  .reserve-course-action button .button-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .reserve-course-action-tag {
+    justify-content: center;
+    margin-bottom: 4px;
+  }
+  .reserve-course-action-tag > p {
+    font-size: 14px;
+  }
+
+  .reserve-bottom-text {
+    font-size: 12px;
+  }
 }
 
 /* reserve end */

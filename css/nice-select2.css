@@ -50,6 +50,12 @@
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  .nice-select.xs {
+    width: 100px;
+  }
+}
+
 .nice-select:hover {
   border-color: #dbdbdb;
 }
@@ -249,4 +255,25 @@
   height: auto;
   outline: 0 !important;
   font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .nice-select {
+    height: 32px;
+    line-height: 32px;
+    padding-left: 12px;
+  }
+
+  .nice-select span.current {
+    font-size: 12px;
+  }
+  .nice-select:after {
+    width: 4px;
+    height: 4px;
+    margin-top: -4px;
+  }
+
+  .nice-select .option {
+    font-size: 12px;
+  }
 }

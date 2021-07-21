@@ -19,7 +19,21 @@
   <body>
     <div class="layout">
       <div class="my-class container">
-        <div class="left">
+        <div class="my-class-header">
+          <div class="my-class-header-item" data-type="schedule">
+            <div class="my-class-header-item-icon">
+              <img src="images/icon.svg" />
+            </div>
+            <p>課程行事曆</p>
+          </div>
+          <div class="my-class-header-item" data-type="reserve">
+            <div class="my-class-header-item-icon">
+              <img src="images/icon.svg" />
+            </div>
+            <p>預訂課程</p>
+          </div>
+        </div>
+        <div id="left" class="left">
           <div class="left-wrapper">
             <div class="calendar">
               <span class="calendar-title">課程行事曆</span>
@@ -402,7 +416,7 @@
                 </div>
               </div>
             </div>
-            <button class="button lg full">
+            <button class="left-button button lg full">
               <img class="button-icon" src="images/icon.svg" />
               <p>預訂課程</p>
             </button>
@@ -850,5 +864,26 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const headerItems = document.getElementsByClassName(
+        "my-class-header-item"
+      );
+
+      Array.from(headerItems, function (item) {
+        const itemType = item.dataset.type;
+
+        item.addEventListener("click", function () {
+          const leftElement = document.getElementById("left");
+          const leftType = leftElement.dataset.type;
+
+          if (leftType === itemType) {
+            leftElement.dataset.type = "";
+          } else {
+            leftElement.dataset.type = itemType;
+          }
+        });
+      });
+    </script>
   </body>
 </html>
