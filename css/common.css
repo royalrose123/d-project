@@ -335,5 +335,13 @@
     height: 28px;
     font-size: 14px;
   }
+
+  .course-card-bottom {
+    font-size: 12px;
+    margin-top: 12px;
+  }
+
+  .course-link {
+  }
 }
 /* course-card - end */
