@@ -46,6 +46,7 @@
 }
 .button.full {
   max-width: initial;
+  height: 50px;
 }
 
 .button-icon {
@@ -54,10 +55,15 @@
   margin-right: 8px;
 }
 
+.button.full .button-icon {
+  width: 30px;
+  height: 30px;
+}
+
 /* carousel icon */
 /* size */
 /* xs = w: 35px, H: 70px */
-/* sm = w: 62px, H: 124px */
+/* sm = w: 44px, H: 86px */
 /* md = w: 62px, H: 124px */
 
 .carousel-icon {
@@ -75,7 +81,7 @@
 }
 
 .carousel-icon.sm {
-  width: 42px;
+  width: 44px;
   height: 86px;
 }
 
@@ -164,7 +170,7 @@
 
 .course-card-info-content-tag > p {
   color: #50b1ff;
-  font-size: 16px;
+  font-size: 1.1vw;
   line-height: 24px;
   position: relative;
   margin-right: 12px;
@@ -192,6 +198,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.course-card-info-content-teacher-name {
+  color: #707070;
 }
 
 .course-card-info-content-teacher-avatar {
@@ -229,5 +239,11 @@
 .course-link {
   color: #50b1ff;
   cursor: pointer;
+}
+
+@media (min-width: 1440) {
+  .course-card-info-content-tag > p {
+    font-size: 16px;
+  }
 }
 /* course-card - end */
