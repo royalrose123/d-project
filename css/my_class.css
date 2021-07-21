@@ -26,6 +26,7 @@
 
 .left {
   height: fit-content;
+  height: -moz-fit-content;
   display: flex;
   flex-direction: row;
   position: relative;
