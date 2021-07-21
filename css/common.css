@@ -130,6 +130,13 @@
   }
 }
 
+@media (max-width: 767px) {
+  .carousel-icon.sm {
+    width: 28px;
+    height: 54px;
+  }
+}
+
 /* course-card - start */
 .course-card {
   width: 100%;
@@ -181,6 +188,9 @@
   font-size: 1.1vw;
   line-height: 24px;
   position: relative;
+}
+
+.course-card-info-content-tag > p:not(:last-child) {
   margin-right: 12px;
 }
 
@@ -257,6 +267,72 @@
 }
 @media (max-width: 1023px) {
   .course-card-info-content-tag > p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .course-card {
+    max-width: 280px;
+    min-height: 280px;
+    padding-bottom: 20px;
+  }
+
+  .course-card-info {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0px;
+    position: relative;
+  }
+
+  .course-card-info-image {
+    max-width: 144px;
+    height: 108px;
+    margin-top: 4px;
+    margin-bottom: 52px;
+  }
+
+  .course-card-info-content {
+    align-items: center;
+  }
+
+  .course-card-info-content-tag {
+    justify-content: center;
+    margin-bottom: 4px;
+  }
+
+  .course-card-info-content-teacher {
+    flex-direction: column;
+    position: absolute;
+    bottom: 12px;
+  }
+
+  .course-card-info-content-teacher-avatar {
+    margin-right: 0px;
+    margin-bottom: 6px;
+  }
+
+  .course-card-info-content-teacher-name {
+    font-size: 12px;
+  }
+
+  .course-card-info-content-text {
+    text-align: center;
+    font-size: 16px;
+    padding: 0px 12px;
+  }
+
+  .course-card-action {
+    padding: 0px 14px;
+  }
+  /* course card button */
+  .course-card > .course-card-action > button > .button-icon {
+    display: none;
+  }
+
+  .course-card > .course-card-action > button {
+    max-width: 84px;
+    height: 28px;
     font-size: 14px;
   }
 }

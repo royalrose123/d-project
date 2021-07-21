@@ -12,6 +12,12 @@
   padding: 108px 1vw;
 }
 
+@media (max-width: 767px) {
+  .container {
+    padding: 108px 10px;
+  }
+}
+
 .my-class {
   width: 100%;
   height: auto;
@@ -782,7 +788,7 @@
 @media (max-width: 767px) {
   .right {
     width: 100%;
-    max-width: 340px;
+    max-width: 480px;
   }
 }
 
@@ -830,6 +836,7 @@
   width: 32px;
   height: 26px;
   background-image: url("../images/menu02.svg");
+  transform: rotate(10deg);
 }
 
 .tab-item.active > .menu02,
@@ -863,6 +870,37 @@
 .tab-item.active > .tab-item-text {
   color: #ffffff;
   background-color: #ed4c7c;
+}
+
+/* tab rwd */
+@media (max-width: 767px) {
+  .tab-item {
+    max-width: 108px;
+    height: 28px;
+  }
+
+  .tab-item .tab-item-text {
+    font-size: 14px;
+  }
+
+  .tab-item .tab-item-icon {
+    margin-right: 4px;
+  }
+
+  .tab-item-icon.menu01 {
+    width: 16px;
+    height: 16px;
+  }
+
+  .tab-item-icon.menu02 {
+    width: 16px;
+    height: 14px;
+  }
+
+  .tab-item-icon.menu03 {
+    width: 19px;
+    height: 16px;
+  }
 }
 
 /* header */
@@ -991,7 +1029,6 @@
 
   .header-image.monster01 {
     max-width: 184px;
-    /* margin-left: 24px; */
   }
 
   .header-image.monster02 {
@@ -1021,6 +1058,46 @@
 
   .header-action > .header-action-item {
     width: 64px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    height: 132px;
+  }
+
+  .header-image.monster01 {
+    max-width: 100px;
+    margin-right: 0px;
+  }
+
+  .header-level {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+  }
+
+  .header-level > .header-level-text {
+    font-size: 20px;
+  }
+
+  .header-level > .header-level-image {
+    max-width: 186px;
+    margin-bottom: 16px;
+  }
+
+  .header-action {
+    font-size: 12px;
+  }
+
+  .header-action > .header-action-divider {
+    height: 8px;
+    margin: 0px 4px;
+  }
+
+  .header-action > .header-action-item {
+    width: 48px;
   }
 }
 
@@ -1180,6 +1257,12 @@
   }
 }
 
+@media (max-width: 767px) {
+  .lesson-carousel-content {
+    margin: 0px 40px;
+  }
+}
+
 /* lesson unit */
 .lesson-unit {
   width: 100%;
@@ -1251,6 +1334,11 @@
 
 /* lesson unit info rwd */
 @media (max-width: 1023px) {
+  .lesson-unit-image {
+    width: 184px;
+    height: 120px;
+  }
+
   .lesson-unit-info-title {
     margin-bottom: 8px;
   }
@@ -1460,6 +1548,25 @@
   }
 }
 
+@media (max-width: 767px) {
+  .course {
+    padding: 0px 14px;
+    margin-left: 32px;
+  }
+
+  .course-info {
+    margin-left: -36px;
+  }
+
+  .course-info-content-status-check {
+    margin-right: 16px;
+  }
+
+  .course-info-divider {
+    left: -10px;
+  }
+}
+
 /* 為了跟其他頁面的 course 做區隔所以加上 lesson  */
 .lesson .course:not(:last-child) .course-card {
   margin-bottom: 30px;
@@ -1603,10 +1710,6 @@
 
 .story-content-image.image02 > img {
   width: 100%;
-}
-
-.story-content-carousel {
-  top: 40%;
 }
 
 .story-course-wrapper {
@@ -1776,5 +1879,44 @@
 
   .story-content-image.image02 {
     max-width: 58px;
+  }
+}
+
+@media (max-width: 767px) {
+  .story-header-image.toy01 {
+    max-width: 120px;
+  }
+
+  .story-header-image.toy02 {
+    max-width: 140px;
+  }
+
+  .story-header-title-image {
+    max-width: 144px;
+  }
+
+  .story-header-title-text {
+    font-size: 20px;
+  }
+
+  .story-content {
+    padding: 12px 10px 35px 10px;
+  }
+
+  .story-course {
+    max-width: 320px;
+  }
+
+  .story-content-image.image02 {
+    max-width: 40px;
+  }
+
+  .story-course-card-info-name {
+    font-size: 18px;
+    padding: 0px 12px;
+  }
+
+  .story-course-card-image {
+    max-width: 280px;
   }
 }
