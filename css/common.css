@@ -122,6 +122,14 @@
   cursor: not-allowed;
 }
 
+/* carousel rwd */
+@media (max-width: 1023px) {
+  .carousel-icon.xs {
+    width: 28px;
+    height: 54px;
+  }
+}
+
 /* course-card - start */
 .course-card {
   width: 100%;
@@ -241,9 +249,15 @@
   cursor: pointer;
 }
 
-@media (min-width: 1440) {
+/* course rwd */
+@media (min-width: 1440px) {
   .course-card-info-content-tag > p {
     font-size: 16px;
+  }
+}
+@media (max-width: 1023px) {
+  .course-card-info-content-tag > p {
+    font-size: 14px;
   }
 }
 /* course-card - end */
