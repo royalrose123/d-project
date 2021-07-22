@@ -80,6 +80,14 @@ body {
     STHeiti, sans-serif, serif;
 }
 
+html {
+  overflow: hidden;
+}
+
+body {
+  overflow-y: scroll;
+}
+
 ol,
 ul span {
   list-style: none;

@@ -866,6 +866,11 @@
     </div>
 
     <script>
+      // 除了裝置寬度外，透過 left 的 data-type 決定顯示 schedule 或 reserve
+      // data-type 為 schedule 顯示 schedule
+      // data-type 為 reserve 顯示 reserve
+      // data-type 為空則都不顯示
+      // 暫時用這方法，套版時可以用其他方法處理
       const headerItems = document.getElementsByClassName(
         "my-class-header-item"
       );

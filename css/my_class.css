@@ -138,15 +138,12 @@
   .left-wrapper {
     margin-right: 32px;
   }
-
-  /* .left-popup {
-    width: 100%;
-  } */
 }
 
 @media (max-width: 1023px) {
   .left {
     width: 100%;
+    height: auto;
     flex-direction: column;
     position: absolute;
     left: 0px;
@@ -615,6 +612,10 @@
     display: none;
   }
 
+  .schedule-wrapper {
+    overflow-y: hidden;
+  }
+
   .schedule-item {
     display: flex;
     flex-direction: column;
@@ -655,7 +656,7 @@
 }
 
 .reserve-content {
-  max-height: calc(100% - 228px);
+  max-height: calc(100% - 208px);
   display: flex;
   flex-direction: column;
   align-items: center;
