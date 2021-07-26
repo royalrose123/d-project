@@ -388,3 +388,17 @@
 .layout {
   box-sizing: border-box;
 }
+
+.all-elements {
+  height: 100%;
+}
+.page-content {
+  height: 100%;
+}
+.container {
+  height: 100%;
+}
+
+.footer {
+  box-sizing: content-box;
+}

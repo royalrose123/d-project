@@ -399,7 +399,7 @@
           </div>
 
           <!-- Desktop內容 -->
-          <div class="layout">
+          <div id="layout" class="layout">
             <div class="my-class class-container">
               <div class="my-class-header">
                 <div class="my-class-header-item" data-type="schedule">
@@ -1185,7 +1185,7 @@
                   </div>
                 </div>
               </div>
-              <div class="right">
+              <div id="right" class="right">
                 <!-- tab -->
                 <div class="tab">
                   <div class="tab-item">
@@ -1859,12 +1859,15 @@
 
         item.addEventListener("click", function () {
           const leftElement = document.getElementById("left");
+          const layoutElement = document.getElementById("layout");
           const leftType = leftElement.dataset.type;
 
           if (leftType === itemType) {
             leftElement.dataset.type = "";
+            layoutElement.dataset.type = "";
           } else {
             leftElement.dataset.type = itemType;
+            layoutElement.dataset.type = itemType;
           }
         });
       });
