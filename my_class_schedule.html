@@ -12,980 +12,1713 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/photo.css" />
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.pageslide.css" />
     <link rel="stylesheet" type="text/css" href="css/reboot.css" />
     <link rel="stylesheet" type="text/css" href="css/common.css" />
     <link rel="stylesheet" type="text/css" href="css/my_class.css" />
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/framework.js"></script>
+    <script src="js/jquery.easy-pie-chart.js"></script>
+    <script src="js/jquery-ui.js"></script>
   </head>
   <body>
-    <div class="layout">
-      <div class="my-class class-container">
-        <div class="my-class-header">
-          <div class="my-class-header-item" data-type="schedule">
-            <div class="my-class-header-item-icon">
-              <img src="images/icon.svg" />
+    <div class="browser_in">
+      <table
+        width="100%"
+        height="100%"
+        border="0"
+        cellspacing="0"
+        cellpadding="0"
+      >
+        <tr>
+          <td bgcolor="#323A45" style="vertical-align: middle">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="20%">
+                  <img src="images/ie/ss.gif" width="1" alt="*" />
+                </td>
+                <td width="60%" align="center" valign="top">
+                  <table
+                    width="100%"
+                    border="0"
+                    cellspacing="0"
+                    cellpadding="0"
+                  >
+                    <tr>
+                      <td>
+                        <img src="images/ie/ss.gif" width="1" height="50" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        align="center"
+                        style="
+                          font-size: 25px;
+                          color: #fff;
+                          font-family: Arial, Helvetica, sans-serif;
+                          line-height: 35px;
+                        "
+                      >
+                        亲~您的浏览器版本过低，快使用速度更快体验更佳的浏览器畅游VIPABC会员中心吧！<br />
+                        带你装逼带你飞～～～～
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td
+                        align="center"
+                        style="
+                          font-size: 15px;
+                          color: #999;
+                          font-family: Arial, Helvetica, sans-serif;
+                          line-height: 30px;
+                        "
+                      >
+                        亲爱的用户您好，由于VIPABC会员中心含有您的个人资料，<br />
+                        以及重要的帐户明细，为了保护您的权益以及浏览上的体验，建议您更新浏览器版本。
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        align="center"
+                        style="
+                          font-size: 15px;
+                          color: #fff;
+                          font-family: Arial, Helvetica, sans-serif;
+                        "
+                      >
+                        &nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        align="center"
+                        style="
+                          font-size: 15px;
+                          color: #fff;
+                          font-family: Arial, Helvetica, sans-serif;
+                        "
+                      >
+                        <table
+                          width="10%"
+                          border="0"
+                          cellspacing="0"
+                          cellpadding="0"
+                        >
+                          <tr>
+                            <td align="center">
+                              <table
+                                width="10%"
+                                border="0"
+                                cellspacing="0"
+                                cellpadding="0"
+                              >
+                                <tr>
+                                  <td align="center">
+                                    <a
+                                      href="https://www.google.com/chrome/browser/"
+                                      target="_blank"
+                                      ><img
+                                        src="images/ie/do_ch_ico.png"
+                                        width="70"
+                                        height="70"
+                                    /></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center">
+                                    <img
+                                      src="images/ie/ss.gif"
+                                      width="1"
+                                      height="10"
+                                      alt="*"
+                                    />
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="color: #ffffff">
+                                    Chrome
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <td align="center">
+                              <img
+                                src="images/ie/ss.gif"
+                                width="25"
+                                height="1"
+                              />
+                            </td>
+                            <td align="center">
+                              <table
+                                width="10%"
+                                border="0"
+                                cellspacing="0"
+                                cellpadding="0"
+                              >
+                                <tr>
+                                  <td align="center">
+                                    <a
+                                      href="https://www.mozilla.org/en-US/firefox/new/"
+                                      target="_blank"
+                                      ><img
+                                        src="images/ie/do_fi_ico.png"
+                                        width="70"
+                                        height="70"
+                                    /></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center">
+                                    <img
+                                      src="images/ie/ss.gif"
+                                      width="1"
+                                      height="10"
+                                      alt="*"
+                                    />
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="color: #ffffff">
+                                    Firefox
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <td align="center">
+                              <img
+                                src="images/ie/ss.gif"
+                                width="25"
+                                height="1"
+                              />
+                            </td>
+                            <td align="center">
+                              <table
+                                width="10%"
+                                border="0"
+                                cellspacing="0"
+                                cellpadding="0"
+                              >
+                                <tr>
+                                  <td align="center">
+                                    <a
+                                      href="http://windows.microsoft.com/zh-tw/internet-explorer/browser-ie#touchweb=touchvidtab1"
+                                      target="_blank"
+                                      ><img
+                                        src="images/ie/do_ie_ico.png"
+                                        width="70"
+                                        height="70"
+                                    /></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center">
+                                    <img
+                                      src="images/ie/ss.gif"
+                                      width="1"
+                                      height="10"
+                                      alt="*"
+                                    />
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="color: #ffffff">
+                                    IE
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        align="center"
+                        style="
+                          font-size: 15px;
+                          color: #fff;
+                          font-family: Arial, Helvetica, sans-serif;
+                        "
+                      >
+                        &nbsp;
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="20%">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="all-elements">
+      <!-- 行動裝置左側選單 -->
+      <div id="sidebar" class="page-sidebar">
+        <div class="left_1_ph">
+          <div class="circle_ph">
+            <div class="inner_ph" id="user_photo">
+              <img src="images/photo.jpg" alt="头像" />
             </div>
-            <p>課程行事曆</p>
           </div>
-          <div class="my-class-header-item" data-type="reserve">
-            <div class="my-class-header-item-icon">
-              <img src="images/icon.svg" />
+          <div class="cir_acc_ph">
+            <div class="f1">Welcome!!</div>
+            <div class="f2">
+              <p class="name">Kin Lau</p>
+              <a href="#">
+                <div class="notice_ph">
+                  <div class="notice_ar_ph">3</div>
+                </div>
+              </a>
             </div>
-            <p>預訂課程</p>
+            <div class="f3">
+              最想加强的是<span>会话</span>
+              <a href="#">
+                <div class="setup"></div>
+              </a>
+            </div>
           </div>
         </div>
-        <div id="left" class="left" data-type="schedule">
-          <div class="left-wrapper">
-            <div class="calendar">
-              <span class="calendar-title">課程行事曆</span>
-              <div class="calendar-time">
-                <img
-                  class="calendar-time-clock"
-                  src="images/calendar_clock.svg"
-                />
-                <span class="calendar-time-text">台北 2021/06/23 18:07</span>
-                <div class="calendar-time-turn"></div>
-              </div>
-              <div class="calendar-header">
-                <span class="calendar-header-text">January 2021</span>
-                <div class="calendar-header-button">
-                  <div class="calendar-header-button-icon previous"></div>
-                  <div class="calendar-header-button-icon next"></div>
-                </div>
-              </div>
-              <div class="calendar-body">
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text week">M</p>
-                </div>
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text week">T</p>
-                </div>
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text week">W</p>
-                </div>
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text week">T</p>
-                </div>
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text week">F</p>
-                </div>
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text week">S</p>
-                </div>
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text week">S</p>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day empty"></p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day empty"></p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day empty"></p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">1</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">2</p>
-                  <div class="calendar-dot" data-is-marked="true"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">3</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">4</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">5</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">6</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">7</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day active">8</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="true">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">9</p>
-                  <div class="calendar-dot" data-is-marked="true"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">10</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">11</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">12</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">13</p>
-                  <div class="calendar-dot" data-is-marked="true"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">14</p>
-                  <div class="calendar-dot" data-is-marked="true"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">15</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">16</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">17</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">18</p>
-                  <div class="calendar-dot" data-is-marked="true"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">19</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">20</p>
-                  <div class="calendar-dot" data-is-marked="true"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">21</p>
-                  <div class="calendar-dot" data-is-marked="true"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">22</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">23</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">24</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">25</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">26</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">27</p>
-                  <div class="calendar-dot" data-is-marked="true"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">28</p>
-                  <div class="calendar-dot" data-is-marked="true"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">29</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">30</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-
-                <div class="calendar-body-item">
-                  <p class="calendar-body-item-text day">31</p>
-                  <div class="calendar-dot" data-is-marked="false"></div>
-                  <div class="calendar-body-item-more" data-is-more="false">
-                    <div class="calendar-dot"></div>
-                    <div class="calendar-dot"></div>
-                    <div class="plus"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="left-button button lg full">
-              <img class="button-icon" src="images/icon.svg" />
-              <p>預訂課程</p>
-            </button>
-            <div class="banner">
-              <div class="banner-image">
-                <img src="images/banner.png" />
-              </div>
-              <div class="banner-dot">
-                <div class="banner-dot-item"></div>
-                <div class="banner-dot-item"></div>
-                <div class="banner-dot-item"></div>
+        <div class="clear"></div>
+        <div class="container">
+          <div class="toggle-1">
+            <a href="#">
+              <span class="timezone">北京时间 8/13 10:07</span>
+            </a>
+          </div>
+          <div class="toggle-1">
+            <a href="index.html">回首頁</a>
+          </div>
+          <div class="toggle-1">
+            <a href="class_vip.html">预约/取消课程</a>
+          </div>
+          <div class="toggle-1">
+            <a href="class_2_class_listview.html">我的课程</a>
+          </div>
+          <div class="toggle-1">
+            <a href="track_1.html">学习管理</a>
+          </div>
+          <div class="toggle-1">
+            <a href="video_1.html">精选课程录像</a>
+          </div>
+          <div class="toggle-1">
+            <a href="newmember.html">新手专区</a>
+          </div>
+          <div class="toggle-1">
+            <a href="#" class="deploy-toggle-1">
+              <div class="lef_f1">新手包</div>
+            </a>
+            <div class="toggle-content">
+              <div class="sec_list">
+                <ul>
+                  <li><a href="#">常见问答</a></li>
+                  <li><a href="#">新手影片教学</a></li>
+                  <li><a href="#">新手专区</a></li>
+                  <li><a href="#">下载学习App</a></li>
+                  <li><a href="#">软件测试与下载</a></li>
+                  <li><a href="#">教学平台介绍</a></li>
+                  <li><a href="#">關闭快显封锁</a></li>
+                  <li><a href="navigation.html">新版地图</a></li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="left-popup schedule">
-            <div class="schedule-top">
-              <img src="images/icon-1.svg" />
-            </div>
-            <div class="schedule-wrapper">
-              <div class="schedule-item">
-                <div class="schedule-item-header">
-                  <p>2021/9/12 星期日</p>
-                </div>
-                <div class="schedule-item-course">
-                  <div class="schedule-item-course-left">
-                    <p class="schedule-item-course-left-time">13:30</p>
-                    <div class="schedule-item-course-left-divider"></div>
-                  </div>
-                  <div class="schedule-item-course-right">
-                    <div class="schedule-item-course-right-tag">
-                      <p>一年級</p>
-                      <p>45 mins</p>
-                    </div>
-                    <p class="schedule-item-course-right-name">牛津一對一</p>
-                    <div class="schedule-item-course-right-teacher">
-                      <div class="schedule-item-course-right-teacher-avatar">
-                        <img src="images/teacher_img.png" />
-                      </div>
-                      <p class="schedule-item-course-right-teacher-name">
-                        Diana V.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="schedule-item">
-                <div class="schedule-item-header">
-                  <p>2021/9/12 星期日</p>
-                </div>
-                <div class="schedule-item-course">
-                  <div class="schedule-item-course-left">
-                    <p class="schedule-item-course-left-time">13:30</p>
-                    <div class="schedule-item-course-left-divider"></div>
-                  </div>
-                  <div class="schedule-item-course-right">
-                    <div class="schedule-item-course-right-tag">
-                      <p>一年級</p>
-                      <p>45 mins</p>
-                    </div>
-                    <p class="schedule-item-course-right-name">牛津一對一</p>
-                    <div class="schedule-item-course-right-teacher">
-                      <div class="schedule-item-course-right-teacher-avatar">
-                        <img src="images/teacher_img.png" />
-                      </div>
-                      <p class="schedule-item-course-right-teacher-name">
-                        Diana V.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="schedule-item-course">
-                  <div class="schedule-item-course-left">
-                    <p class="schedule-item-course-left-time">18:30</p>
-                    <div class="schedule-item-course-left-divider"></div>
-                  </div>
-                  <div class="schedule-item-course-right">
-                    <div class="schedule-item-course-right-tag">
-                      <p>一年級</p>
-                      <p>45 mins</p>
-                    </div>
-                    <p class="schedule-item-course-right-name">牛津一對一</p>
-                    <div class="schedule-item-course-right-teacher">
-                      <div class="schedule-item-course-right-teacher-avatar">
-                        <img src="images/teacher_img.png" />
-                      </div>
-                      <p class="schedule-item-course-right-teacher-name">
-                        Diana V.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="schedule-item">
-                <div class="schedule-item-header">
-                  <p>2021/9/12 星期日</p>
-                </div>
-                <div class="schedule-item-course">
-                  <div class="schedule-item-course-left">
-                    <p class="schedule-item-course-left-time">13:30</p>
-                    <div class="schedule-item-course-left-divider"></div>
-                  </div>
-                  <div class="schedule-item-course-right">
-                    <div class="schedule-item-course-right-tag">
-                      <p>一年級</p>
-                      <p>45 mins</p>
-                    </div>
-                    <p class="schedule-item-course-right-name">牛津一對一</p>
-                    <div class="schedule-item-course-right-teacher">
-                      <div class="schedule-item-course-right-teacher-avatar">
-                        <img src="images/teacher_img.png" />
-                      </div>
-                      <p class="schedule-item-course-right-teacher-name">
-                        Diana V.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="schedule-item">
-                <div class="schedule-item-header">
-                  <p>2021/9/12 星期日</p>
-                </div>
-                <div class="schedule-item-course">
-                  <div class="schedule-item-course-left">
-                    <p class="schedule-item-course-left-time">13:30</p>
-                    <div class="schedule-item-course-left-divider"></div>
-                  </div>
-                  <div class="schedule-item-course-right">
-                    <div class="schedule-item-course-right-tag">
-                      <p>一年級</p>
-                      <p>45 mins</p>
-                    </div>
-                    <p class="schedule-item-course-right-name">牛津一對一</p>
-                    <div class="schedule-item-course-right-teacher">
-                      <div class="schedule-item-course-right-teacher-avatar">
-                        <img src="images/teacher_img.png" />
-                      </div>
-                      <p class="schedule-item-course-right-teacher-name">
-                        Diana V.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="schedule-item-course">
-                  <div class="schedule-item-course-left">
-                    <p class="schedule-item-course-left-time">18:30</p>
-                    <div class="schedule-item-course-left-divider"></div>
-                  </div>
-                  <div class="schedule-item-course-right">
-                    <div class="schedule-item-course-right-tag">
-                      <p>一年級</p>
-                      <p>45 mins</p>
-                    </div>
-                    <p class="schedule-item-course-right-name">牛津一對一</p>
-                    <div class="schedule-item-course-right-teacher">
-                      <div class="schedule-item-course-right-teacher-avatar">
-                        <img src="images/teacher_img.png" />
-                      </div>
-                      <p class="schedule-item-course-right-teacher-name">
-                        Diana V.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="schedule-item">
-                <div class="schedule-item-header">
-                  <p>2021/9/12 星期日</p>
-                </div>
-                <div class="schedule-item-course">
-                  <div class="schedule-item-course-left">
-                    <p class="schedule-item-course-left-time">13:30</p>
-                    <div class="schedule-item-course-left-divider"></div>
-                  </div>
-                  <div class="schedule-item-course-right">
-                    <div class="schedule-item-course-right-tag">
-                      <p>一年級</p>
-                      <p>45 mins</p>
-                    </div>
-                    <p class="schedule-item-course-right-name">牛津一對一</p>
-                    <div class="schedule-item-course-right-teacher">
-                      <div class="schedule-item-course-right-teacher-avatar">
-                        <img src="images/teacher_img.png" />
-                      </div>
-                      <p class="schedule-item-course-right-teacher-name">
-                        Diana V.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="schedule-item">
-                <div class="schedule-item-header">
-                  <p>2021/9/12 星期日</p>
-                </div>
-                <div class="schedule-item-course">
-                  <div class="schedule-item-course-left">
-                    <p class="schedule-item-course-left-time">13:30</p>
-                    <div class="schedule-item-course-left-divider"></div>
-                  </div>
-                  <div class="schedule-item-course-right">
-                    <div class="schedule-item-course-right-tag">
-                      <p>一年級</p>
-                      <p>45 mins</p>
-                    </div>
-                    <p class="schedule-item-course-right-name">牛津一對一</p>
-                    <div class="schedule-item-course-right-teacher">
-                      <div class="schedule-item-course-right-teacher-avatar">
-                        <img src="images/teacher_img.png" />
-                      </div>
-                      <p class="schedule-item-course-right-teacher-name">
-                        Diana V.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="schedule-item-course">
-                  <div class="schedule-item-course-left">
-                    <p class="schedule-item-course-left-time">18:30</p>
-                    <div class="schedule-item-course-left-divider"></div>
-                  </div>
-                  <div class="schedule-item-course-right">
-                    <div class="schedule-item-course-right-tag">
-                      <p>一年級</p>
-                      <p>45 mins</p>
-                    </div>
-                    <p class="schedule-item-course-right-name">牛津一對一</p>
-                    <div class="schedule-item-course-right-teacher">
-                      <div class="schedule-item-course-right-teacher-avatar">
-                        <img src="images/teacher_img.png" />
-                      </div>
-                      <p class="schedule-item-course-right-teacher-name">
-                        Diana V.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+          <div class="toggle-1">
+            <a href="#" class="deploy-toggle-1">
+              <div class="lef_f1">VIPABC</div>
+            </a>
+            <div class="toggle-content">
+              <div class="sec_list">
+                <ul>
+                  <li><a href="#">关于VIPABC</a></li>
+                  <li><a href="#">隐私保护</a></li>
+                  <li><a href="#">新手专区</a></li>
+                  <li><a href="#">安全条款</a></li>
+                  <li><a href="#">服务条款</a></li>
+                  <li><a href="#">诚征英才</a></li>
+                  <li><a href="#">企业培训</a></li>
+                  <li><a href="#">联络我们</a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="right">
-          <!-- tab -->
-          <div class="tab">
-            <div class="tab-item">
-              <div class="tab-item-icon menu01"></div>
-              <span class="tab-item-text">課程總覽</span>
+        <div class="clear"></div>
+        <div class="call_box_in">
+          <div class="f1"></div>
+          <div class="f2">4006-30-30-30</div>
+          <div class="f3">有任何问题吗？欢迎随时询问。</div>
+        </div>
+        <div class="call_box_copy_in">
+          <span
+            >经营许可 : 教职成司函[2011]267号 | 京ICP证090121号 |
+            京ICP备11004351号 | 京公网安备110105019074号 | 网络文化经营许可证 |
+            京网文[2014]0063-0013号<br />
+            VIPABC.com 版权所有 © 2008-2014 全球领先英语真人外教网</span
+          >
+        </div>
+      </div>
+
+      <!-- 內容 -->
+      <div id="content" class="page-content">
+        <!-- header menu -->
+        <div class="container">
+          <div class="header_in">
+            <div class="header_m">
+              <a href="#"><div class="deploy-sidebar"></div></a>
+              <!-- 行動裝置小幫手區 -->
+              <div class="toggle-detial">
+                <a href="#" class="deploy-toggle-detial"></a>
+              </div>
+              <!-- Desktop選單 -->
+              <div class="logo"><img src="images/logo.png" /></div>
+              <div class="logout_botton"><a href="#">退出</a></div>
+              <div class="header_menu">
+                <ul>
+                  <li><a href="newmember.html">新手专区</a></li>
+                  <li><a href="account_2.html">帐户明细</a></li>
+                  <li><a href="video_1.html">精选课程录像</a></li>
+                  <li><a href="track_1.html">学习管理</a></li>
+                  <li><a href="class_2_class_listview.html">我的课程</a></li>
+                  <li><a href="class_vip.html">预约/取消课程</a></li>
+                  <li><a href="index.html">回首頁</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="tab-item active">
-              <div class="tab-item-icon menu02"></div>
-              <span class="tab-item-text">迪士尼課表</span>
-            </div>
-            <div class="tab-item">
-              <div class="tab-item-icon menu03"></div>
-              <span class="tab-item-text">牛津課表</span>
-            </div>
+            <div class="clear"></div>
           </div>
-          <!-- header -->
-          <div class="header">
-            <div class="header-image monster01">
-              <img class="header-image-item" src="images/monster01.png" />
-            </div>
-            <div class="header-level">
-              <div class="header-level-image">
-                <img src="images/level_title.svg" />
-              </div>
-              <div class="header-level-title">你的學習等級</div>
-              <div class="header-level-text">一年級</div>
-            </div>
-            <div class="header-image monster02">
-              <img class="header-image-item" src="images/monster02.png" />
-            </div>
-            <div class="header-action">
-              <span class="header-action-item">修改計畫</span>
-              <div class="header-action-divider"></div>
-              <span class="header-action-item">變更等級</span>
-            </div>
-          </div>
 
-          <!-- lesson -->
-          <div class="lesson">
-            <span class="lesson-title">9月課程</span>
-            <!-- carousel -->
-            <div class="lesson-carousel">
-              <div class="carousel-icon xs previous"></div>
-              <div class="carousel-icon xs next"></div>
-              <div class="lesson-carousel-content">
-                <div class="lesson-carousel-content-unit">
-                  <div class="lesson-carousel-content-unit-item active">
-                    <div class="lesson-carousel-content-unit-item-dot"></div>
-                    <p class="lesson-carousel-content-unit-item-text">Unit 1</p>
+          <!-- Desktop內容 -->
+          <div class="layout">
+            <div class="my-class class-container">
+              <div class="my-class-header">
+                <div class="my-class-header-item" data-type="schedule">
+                  <div class="my-class-header-item-icon">
+                    <img src="images/icon.svg" />
                   </div>
-
-                  <div class="lesson-carousel-content-unit-item">
-                    <div class="lesson-carousel-content-unit-item-dot"></div>
-                    <p class="lesson-carousel-content-unit-item-text">Unit 2</p>
+                  <p>課程行事曆</p>
+                </div>
+                <div class="my-class-header-item" data-type="reserve">
+                  <div class="my-class-header-item-icon">
+                    <img src="images/icon.svg" />
                   </div>
-
-                  <div class="lesson-carousel-content-unit-item">
-                    <div class="lesson-carousel-content-unit-item-dot"></div>
-                    <p class="lesson-carousel-content-unit-item-text">Unit 3</p>
-                  </div>
-
-                  <div class="lesson-carousel-content-unit-item">
-                    <div class="lesson-carousel-content-unit-item-dot"></div>
-                    <p class="lesson-carousel-content-unit-item-text">Unit 4</p>
-                  </div>
+                  <p>預訂課程</p>
                 </div>
               </div>
-            </div>
-
-            <!-- lesson-unit -->
-            <div class="lesson-unit">
-              <div class="lesson-unit-info">
-                <img class="lesson-unit-image" src="images/m_head.svg" />
-                <div class="lesson-unit-info-title">
-                  <p class="lesson-unit-info-title-text">本周計畫單元</p>
-                </div>
-                <div class="lesson-unit-info-content">
-                  <p class="lesson-unit-info-content-title">Alphabet Fun</p>
-                  <p class="lesson-unit-info-content-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip.
-                  </p>
-                </div>
-              </div>
-              <div class="lesson-unit-course">
-                <div class="course">
-                  <div class="course-info">
-                    <div class="course-info-content">
-                      <div class="course-info-content-status">
-                        <div class="course-info-content-status-check">
-                          <img src="images/check.svg" />
-                        </div>
-                        <p class="course-info-content-status-text">已出席</p>
-                      </div>
-                      <div class="course-info-content-time">
-                        <p class="date">2021/9/18</p>
-                        <p class="time">18:30</p>
+              <div id="left" class="left" data-type="schedule">
+                <div class="left-wrapper">
+                  <div class="calendar">
+                    <span class="calendar-title">課程行事曆</span>
+                    <div class="calendar-time">
+                      <img
+                        class="calendar-time-clock"
+                        src="images/calendar_clock.svg"
+                      />
+                      <span class="calendar-time-text"
+                        >台北 2021/06/23 18:07</span
+                      >
+                      <div class="calendar-time-turn"></div>
+                    </div>
+                    <div class="calendar-header">
+                      <span class="calendar-header-text">January 2021</span>
+                      <div class="calendar-header-button">
+                        <div class="calendar-header-button-icon previous"></div>
+                        <div class="calendar-header-button-icon next"></div>
                       </div>
                     </div>
-                    <div class="course-info-divider"></div>
-                  </div>
-                  <div class="course-card">
-                    <div class="course-card-info">
-                      <div class="course-card-info-image">
-                        <img src="images/course_img.png" />
+                    <div class="calendar-body">
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text week">M</p>
                       </div>
-                      <div class="course-card-info-content">
-                        <div class="course-card-info-content-tag">
-                          <p>一年級</p>
-                          <p>45 mins</p>
-                          <p>CCSS</p>
-                          <p>一對四</p>
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text week">T</p>
+                      </div>
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text week">W</p>
+                      </div>
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text week">T</p>
+                      </div>
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text week">F</p>
+                      </div>
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text week">S</p>
+                      </div>
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text week">S</p>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day empty"></p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
                         </div>
-                        <p class="course-card-info-content-text">
-                          Conversation About: Meeting New People
-                        </p>
-                        <div class="course-card-info-content-teacher">
-                          <div class="course-card-info-content-teacher-avatar">
-                            <img src="images/teacher_img.png" />
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day empty"></p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day empty"></p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">1</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">2</p>
+                        <div class="calendar-dot" data-is-marked="true"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">3</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">4</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">5</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">6</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">7</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day active">8</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="true"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">9</p>
+                        <div class="calendar-dot" data-is-marked="true"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">10</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">11</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">12</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">13</p>
+                        <div class="calendar-dot" data-is-marked="true"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">14</p>
+                        <div class="calendar-dot" data-is-marked="true"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">15</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">16</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">17</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">18</p>
+                        <div class="calendar-dot" data-is-marked="true"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">19</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">20</p>
+                        <div class="calendar-dot" data-is-marked="true"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">21</p>
+                        <div class="calendar-dot" data-is-marked="true"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">22</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">23</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">24</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">25</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">26</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">27</p>
+                        <div class="calendar-dot" data-is-marked="true"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">28</p>
+                        <div class="calendar-dot" data-is-marked="true"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">29</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">30</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+
+                      <div class="calendar-body-item">
+                        <p class="calendar-body-item-text day">31</p>
+                        <div class="calendar-dot" data-is-marked="false"></div>
+                        <div
+                          class="calendar-body-item-more"
+                          data-is-more="false"
+                        >
+                          <div class="calendar-dot"></div>
+                          <div class="calendar-dot"></div>
+                          <div class="plus"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="left-button button lg full">
+                    <img class="button-icon" src="images/icon.svg" />
+                    <p>預訂課程</p>
+                  </button>
+                  <div class="banner">
+                    <div class="banner-image">
+                      <img src="images/banner.png" />
+                    </div>
+                    <div class="banner-dot">
+                      <div class="banner-dot-item"></div>
+                      <div class="banner-dot-item"></div>
+                      <div class="banner-dot-item"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="left-popup schedule">
+                  <div class="schedule-top">
+                    <img src="images/icon-1.svg" />
+                  </div>
+                  <div class="schedule-wrapper">
+                    <div class="schedule-item">
+                      <div class="schedule-item-header">
+                        <p>2021/9/12 星期日</p>
+                      </div>
+                      <div class="schedule-item-course">
+                        <div class="schedule-item-course-left">
+                          <p class="schedule-item-course-left-time">13:30</p>
+                          <div class="schedule-item-course-left-divider"></div>
+                        </div>
+                        <div class="schedule-item-course-right">
+                          <div class="schedule-item-course-right-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
                           </div>
-                          <p class="course-card-info-content-teacher-name">
-                            Karla C
+                          <p class="schedule-item-course-right-name">
+                            牛津一對一
+                          </p>
+                          <div class="schedule-item-course-right-teacher">
+                            <div
+                              class="schedule-item-course-right-teacher-avatar"
+                            >
+                              <img src="images/teacher_img.png" />
+                            </div>
+                            <p class="schedule-item-course-right-teacher-name">
+                              Diana V.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="schedule-item">
+                      <div class="schedule-item-header">
+                        <p>2021/9/12 星期日</p>
+                      </div>
+                      <div class="schedule-item-course">
+                        <div class="schedule-item-course-left">
+                          <p class="schedule-item-course-left-time">13:30</p>
+                          <div class="schedule-item-course-left-divider"></div>
+                        </div>
+                        <div class="schedule-item-course-right">
+                          <div class="schedule-item-course-right-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                          </div>
+                          <p class="schedule-item-course-right-name">
+                            牛津一對一
+                          </p>
+                          <div class="schedule-item-course-right-teacher">
+                            <div
+                              class="schedule-item-course-right-teacher-avatar"
+                            >
+                              <img src="images/teacher_img.png" />
+                            </div>
+                            <p class="schedule-item-course-right-teacher-name">
+                              Diana V.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="schedule-item-course">
+                        <div class="schedule-item-course-left">
+                          <p class="schedule-item-course-left-time">18:30</p>
+                          <div class="schedule-item-course-left-divider"></div>
+                        </div>
+                        <div class="schedule-item-course-right">
+                          <div class="schedule-item-course-right-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                          </div>
+                          <p class="schedule-item-course-right-name">
+                            牛津一對一
+                          </p>
+                          <div class="schedule-item-course-right-teacher">
+                            <div
+                              class="schedule-item-course-right-teacher-avatar"
+                            >
+                              <img src="images/teacher_img.png" />
+                            </div>
+                            <p class="schedule-item-course-right-teacher-name">
+                              Diana V.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="schedule-item">
+                      <div class="schedule-item-header">
+                        <p>2021/9/12 星期日</p>
+                      </div>
+                      <div class="schedule-item-course">
+                        <div class="schedule-item-course-left">
+                          <p class="schedule-item-course-left-time">13:30</p>
+                          <div class="schedule-item-course-left-divider"></div>
+                        </div>
+                        <div class="schedule-item-course-right">
+                          <div class="schedule-item-course-right-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                          </div>
+                          <p class="schedule-item-course-right-name">
+                            牛津一對一
+                          </p>
+                          <div class="schedule-item-course-right-teacher">
+                            <div
+                              class="schedule-item-course-right-teacher-avatar"
+                            >
+                              <img src="images/teacher_img.png" />
+                            </div>
+                            <p class="schedule-item-course-right-teacher-name">
+                              Diana V.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="schedule-item">
+                      <div class="schedule-item-header">
+                        <p>2021/9/12 星期日</p>
+                      </div>
+                      <div class="schedule-item-course">
+                        <div class="schedule-item-course-left">
+                          <p class="schedule-item-course-left-time">13:30</p>
+                          <div class="schedule-item-course-left-divider"></div>
+                        </div>
+                        <div class="schedule-item-course-right">
+                          <div class="schedule-item-course-right-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                          </div>
+                          <p class="schedule-item-course-right-name">
+                            牛津一對一
+                          </p>
+                          <div class="schedule-item-course-right-teacher">
+                            <div
+                              class="schedule-item-course-right-teacher-avatar"
+                            >
+                              <img src="images/teacher_img.png" />
+                            </div>
+                            <p class="schedule-item-course-right-teacher-name">
+                              Diana V.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="schedule-item-course">
+                        <div class="schedule-item-course-left">
+                          <p class="schedule-item-course-left-time">18:30</p>
+                          <div class="schedule-item-course-left-divider"></div>
+                        </div>
+                        <div class="schedule-item-course-right">
+                          <div class="schedule-item-course-right-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                          </div>
+                          <p class="schedule-item-course-right-name">
+                            牛津一對一
+                          </p>
+                          <div class="schedule-item-course-right-teacher">
+                            <div
+                              class="schedule-item-course-right-teacher-avatar"
+                            >
+                              <img src="images/teacher_img.png" />
+                            </div>
+                            <p class="schedule-item-course-right-teacher-name">
+                              Diana V.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="schedule-item">
+                      <div class="schedule-item-header">
+                        <p>2021/9/12 星期日</p>
+                      </div>
+                      <div class="schedule-item-course">
+                        <div class="schedule-item-course-left">
+                          <p class="schedule-item-course-left-time">13:30</p>
+                          <div class="schedule-item-course-left-divider"></div>
+                        </div>
+                        <div class="schedule-item-course-right">
+                          <div class="schedule-item-course-right-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                          </div>
+                          <p class="schedule-item-course-right-name">
+                            牛津一對一
+                          </p>
+                          <div class="schedule-item-course-right-teacher">
+                            <div
+                              class="schedule-item-course-right-teacher-avatar"
+                            >
+                              <img src="images/teacher_img.png" />
+                            </div>
+                            <p class="schedule-item-course-right-teacher-name">
+                              Diana V.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="schedule-item">
+                      <div class="schedule-item-header">
+                        <p>2021/9/12 星期日</p>
+                      </div>
+                      <div class="schedule-item-course">
+                        <div class="schedule-item-course-left">
+                          <p class="schedule-item-course-left-time">13:30</p>
+                          <div class="schedule-item-course-left-divider"></div>
+                        </div>
+                        <div class="schedule-item-course-right">
+                          <div class="schedule-item-course-right-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                          </div>
+                          <p class="schedule-item-course-right-name">
+                            牛津一對一
+                          </p>
+                          <div class="schedule-item-course-right-teacher">
+                            <div
+                              class="schedule-item-course-right-teacher-avatar"
+                            >
+                              <img src="images/teacher_img.png" />
+                            </div>
+                            <p class="schedule-item-course-right-teacher-name">
+                              Diana V.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="schedule-item-course">
+                        <div class="schedule-item-course-left">
+                          <p class="schedule-item-course-left-time">18:30</p>
+                          <div class="schedule-item-course-left-divider"></div>
+                        </div>
+                        <div class="schedule-item-course-right">
+                          <div class="schedule-item-course-right-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                          </div>
+                          <p class="schedule-item-course-right-name">
+                            牛津一對一
+                          </p>
+                          <div class="schedule-item-course-right-teacher">
+                            <div
+                              class="schedule-item-course-right-teacher-avatar"
+                            >
+                              <img src="images/teacher_img.png" />
+                            </div>
+                            <p class="schedule-item-course-right-teacher-name">
+                              Diana V.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <!-- tab -->
+                <div class="tab">
+                  <div class="tab-item">
+                    <div class="tab-item-icon menu01"></div>
+                    <span class="tab-item-text">課程總覽</span>
+                  </div>
+                  <div class="tab-item active">
+                    <div class="tab-item-icon menu02"></div>
+                    <span class="tab-item-text">迪士尼課表</span>
+                  </div>
+                  <div class="tab-item">
+                    <div class="tab-item-icon menu03"></div>
+                    <span class="tab-item-text">牛津課表</span>
+                  </div>
+                </div>
+                <!-- header -->
+                <div class="header">
+                  <div class="header-image monster01">
+                    <img class="header-image-item" src="images/monster01.png" />
+                  </div>
+                  <div class="header-level">
+                    <div class="header-level-image">
+                      <img src="images/level_title.svg" />
+                    </div>
+                    <div class="header-level-title">你的學習等級</div>
+                    <div class="header-level-text">一年級</div>
+                  </div>
+                  <div class="header-image monster02">
+                    <img class="header-image-item" src="images/monster02.png" />
+                  </div>
+                  <div class="header-action">
+                    <span class="header-action-item">修改計畫</span>
+                    <div class="header-action-divider"></div>
+                    <span class="header-action-item">變更等級</span>
+                  </div>
+                </div>
+
+                <!-- lesson -->
+                <div class="lesson">
+                  <span class="lesson-title">9月課程</span>
+                  <!-- carousel -->
+                  <div class="lesson-carousel">
+                    <div class="carousel-icon xs previous"></div>
+                    <div class="carousel-icon xs next"></div>
+                    <div class="lesson-carousel-content">
+                      <div class="lesson-carousel-content-unit">
+                        <div class="lesson-carousel-content-unit-item active">
+                          <div
+                            class="lesson-carousel-content-unit-item-dot"
+                          ></div>
+                          <p class="lesson-carousel-content-unit-item-text">
+                            Unit 1
+                          </p>
+                        </div>
+
+                        <div class="lesson-carousel-content-unit-item">
+                          <div
+                            class="lesson-carousel-content-unit-item-dot"
+                          ></div>
+                          <p class="lesson-carousel-content-unit-item-text">
+                            Unit 2
+                          </p>
+                        </div>
+
+                        <div class="lesson-carousel-content-unit-item">
+                          <div
+                            class="lesson-carousel-content-unit-item-dot"
+                          ></div>
+                          <p class="lesson-carousel-content-unit-item-text">
+                            Unit 3
+                          </p>
+                        </div>
+
+                        <div class="lesson-carousel-content-unit-item">
+                          <div
+                            class="lesson-carousel-content-unit-item-dot"
+                          ></div>
+                          <p class="lesson-carousel-content-unit-item-text">
+                            Unit 4
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div class="course-card-action">
-                      <button class="button xs">
-                        <img class="button-icon" src="images/btn_hw.svg" />
-                        <p>課後作業</p>
-                      </button>
-                      <button class="button xs">
-                        <img class="button-icon" src="images/btn_review.svg" />
-                        <p>複習課程</p>
-                      </button>
-                      <button class="button sm">
-                        <img class="button-icon" src="images/btn_again.svg" />
-                        <p>再學一次</p>
-                      </button>
+                  </div>
+
+                  <!-- lesson-unit -->
+                  <div class="lesson-unit">
+                    <div class="lesson-unit-info">
+                      <img class="lesson-unit-image" src="images/m_head.svg" />
+                      <div class="lesson-unit-info-title">
+                        <p class="lesson-unit-info-title-text">本周計畫單元</p>
+                      </div>
+                      <div class="lesson-unit-info-content">
+                        <p class="lesson-unit-info-content-title">
+                          Alphabet Fun
+                        </p>
+                        <p class="lesson-unit-info-content-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="lesson-unit-course">
+                      <div class="course">
+                        <div class="course-info">
+                          <div class="course-info-content">
+                            <div class="course-info-content-status">
+                              <div class="course-info-content-status-check">
+                                <img src="images/check.svg" />
+                              </div>
+                              <p class="course-info-content-status-text">
+                                已出席
+                              </p>
+                            </div>
+                            <div class="course-info-content-time">
+                              <p class="date">2021/9/18</p>
+                              <p class="time">18:30</p>
+                            </div>
+                          </div>
+                          <div class="course-info-divider"></div>
+                        </div>
+                        <div class="course-card">
+                          <div class="course-card-info">
+                            <div class="course-card-info-image">
+                              <img src="images/course_img.png" />
+                            </div>
+                            <div class="course-card-info-content">
+                              <div class="course-card-info-content-tag">
+                                <p>一年級</p>
+                                <p>45 mins</p>
+                                <p>CCSS</p>
+                                <p>一對四</p>
+                              </div>
+                              <p class="course-card-info-content-text">
+                                Conversation About: Meeting New People
+                              </p>
+                              <div class="course-card-info-content-teacher">
+                                <div
+                                  class="
+                                    course-card-info-content-teacher-avatar
+                                  "
+                                >
+                                  <img src="images/teacher_img.png" />
+                                </div>
+                                <p
+                                  class="course-card-info-content-teacher-name"
+                                >
+                                  Karla C
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="course-card-action">
+                            <button class="button xs">
+                              <img
+                                class="button-icon"
+                                src="images/btn_hw.svg"
+                              />
+                              <p>課後作業</p>
+                            </button>
+                            <button class="button xs">
+                              <img
+                                class="button-icon"
+                                src="images/btn_review.svg"
+                              />
+                              <p>複習課程</p>
+                            </button>
+                            <button class="button sm">
+                              <img
+                                class="button-icon"
+                                src="images/btn_again.svg"
+                              />
+                              <p>再學一次</p>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="course" data-is-attend="false">
+                        <div class="course-info">
+                          <div class="course-info-content">
+                            <div class="course-info-content-status">
+                              <div class="course-info-content-status-check">
+                                <img src="images/check.svg" />
+                              </div>
+                              <p class="course-info-content-status-text">
+                                已出席
+                              </p>
+                            </div>
+                            <div class="course-info-content-time">
+                              <p class="date">2021/9/18</p>
+                              <p class="time">18:30</p>
+                            </div>
+                          </div>
+                          <div class="course-info-divider"></div>
+                        </div>
+                        <div class="course-card">
+                          <div class="course-card-info">
+                            <div class="course-card-info-image">
+                              <img src="images/course_img.png" />
+                            </div>
+                            <div class="course-card-info-content">
+                              <div class="course-card-info-content-tag">
+                                <p>一年級</p>
+                                <p>45 mins</p>
+                                <p>CCSS</p>
+                                <p>一對四</p>
+                              </div>
+                              <p class="course-card-info-content-text">
+                                Conversation About: Meeting New People
+                              </p>
+                              <div class="course-card-info-content-teacher">
+                                <div
+                                  class="
+                                    course-card-info-content-teacher-avatar
+                                  "
+                                >
+                                  <img src="images/teacher_img.png" />
+                                </div>
+                                <p
+                                  class="course-card-info-content-teacher-name"
+                                >
+                                  Karla C
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="course-card-action">
+                            <button class="button xs">
+                              <img
+                                class="button-icon"
+                                src="images/btn_hw.svg"
+                              />
+                              <p>課後作業</p>
+                            </button>
+                            <button class="button xs">
+                              <img
+                                class="button-icon"
+                                src="images/btn_review.svg"
+                              />
+                              <p>複習課程</p>
+                            </button>
+                            <button class="button sm">
+                              <img
+                                class="button-icon"
+                                src="images/btn_again.svg"
+                              />
+                              <p>再學一次</p>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="lesson-enhance">
+                    <div class="lesson-enhance-title">
+                      <p class="lesson-enhance-title-text">本週加強課程</p>
+                    </div>
+                    <div class="lesson-enhance-course">
+                      <div class="course enhance">
+                        <div class="course-info">
+                          <div class="course-info-content">
+                            <div class="course-info-content-status">
+                              <div class="course-info-content-status-check">
+                                <img src="images/check.svg" />
+                              </div>
+                              <p class="course-info-content-status-text">
+                                已出席
+                              </p>
+                            </div>
+                            <div class="course-info-content-time">
+                              <p class="date">2021/9/18</p>
+                              <p class="time">18:30</p>
+                            </div>
+                          </div>
+                          <div class="course-info-divider"></div>
+                        </div>
+                        <div class="course-card">
+                          <div class="course-card-info">
+                            <div class="course-card-info-image">
+                              <img src="images/course_img.png" />
+                            </div>
+                            <div class="course-card-info-content">
+                              <div class="course-card-info-content-tag">
+                                <p>一年級</p>
+                                <p>45 mins</p>
+                                <p>CCSS</p>
+                                <p>一對四</p>
+                              </div>
+                              <p class="course-card-info-content-text">
+                                Conversation About: Meeting New People
+                              </p>
+                              <div class="course-card-info-content-teacher">
+                                <div
+                                  class="
+                                    course-card-info-content-teacher-avatar
+                                  "
+                                >
+                                  <img src="images/teacher_img.png" />
+                                </div>
+                                <p
+                                  class="course-card-info-content-teacher-name"
+                                >
+                                  Karla C
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="course-card-action">
+                            <button class="button xs">
+                              <img
+                                class="button-icon"
+                                src="images/btn_hw.svg"
+                              />
+                              <p>課後作業</p>
+                            </button>
+                            <button class="button xs">
+                              <img
+                                class="button-icon"
+                                src="images/btn_review.svg"
+                              />
+                              <p>複習課程</p>
+                            </button>
+                            <button class="button sm">
+                              <img
+                                class="button-icon"
+                                src="images/btn_again.svg"
+                              />
+                              <p>再學一次</p>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="course enhance">
+                        <div class="course-info">
+                          <div class="course-info-content">
+                            <div class="course-info-content-status">
+                              <div class="course-info-content-status-check">
+                                <img src="images/check.svg" />
+                              </div>
+                              <p class="course-info-content-status-text">
+                                已出席
+                              </p>
+                            </div>
+                            <div class="course-info-content-time">
+                              <p class="date">2021/9/18</p>
+                              <p class="time">18:30</p>
+                            </div>
+                          </div>
+                          <div class="course-info-divider"></div>
+                        </div>
+                        <div class="course-card">
+                          <div class="course-card-info">
+                            <div class="course-card-info-image">
+                              <img src="images/course_img.png" />
+                            </div>
+                            <div class="course-card-info-content">
+                              <div class="course-card-info-content-tag">
+                                <p>一年級</p>
+                                <p>45 mins</p>
+                                <p>CCSS</p>
+                                <p>一對四</p>
+                              </div>
+                              <p class="course-card-info-content-text">
+                                Conversation About: Meeting New People
+                              </p>
+                              <div class="course-card-info-content-teacher">
+                                <div
+                                  class="
+                                    course-card-info-content-teacher-avatar
+                                  "
+                                >
+                                  <img src="images/teacher_img.png" />
+                                </div>
+                                <p
+                                  class="course-card-info-content-teacher-name"
+                                >
+                                  Karla C
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="course-card-action">
+                            <button class="button xs">
+                              <img
+                                class="button-icon"
+                                src="images/btn_hw.svg"
+                              />
+                              <p>課後作業</p>
+                            </button>
+                            <button class="button xs">
+                              <img
+                                class="button-icon"
+                                src="images/btn_review.svg"
+                              />
+                              <p>複習課程</p>
+                            </button>
+                            <button class="button sm">
+                              <img
+                                class="button-icon"
+                                src="images/btn_again.svg"
+                              />
+                              <p>再學一次</p>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="course" data-is-attend="false">
-                  <div class="course-info">
-                    <div class="course-info-content">
-                      <div class="course-info-content-status">
-                        <div class="course-info-content-status-check">
-                          <img src="images/check.svg" />
-                        </div>
-                        <p class="course-info-content-status-text">已出席</p>
-                      </div>
-                      <div class="course-info-content-time">
-                        <p class="date">2021/9/18</p>
-                        <p class="time">18:30</p>
-                      </div>
+                <div class="story">
+                  <div class="story-header">
+                    <div class="story-header-image toy01">
+                      <img
+                        class="story-header-image-item"
+                        src="images/toy01.png"
+                      />
                     </div>
-                    <div class="course-info-divider"></div>
-                  </div>
-                  <div class="course-card">
-                    <div class="course-card-info">
-                      <div class="course-card-info-image">
-                        <img src="images/course_img.png" />
+                    <div class="story-header-title">
+                      <div class="story-header-title-image">
+                        <img src="images/sps_title.svg" />
                       </div>
-                      <div class="course-card-info-content">
-                        <div class="course-card-info-content-tag">
-                          <p>一年級</p>
-                          <p>45 mins</p>
-                          <p>CCSS</p>
-                          <p>一對四</p>
+                      <div class="story-header-title-text">迪士尼故事館</div>
+                    </div>
+                    <div class="story-header-image toy02">
+                      <img
+                        class="story-header-image-item"
+                        src="images/toy02.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="story-content">
+                    <div class="story-content-image image01">
+                      <img src="images/toy04.svg" />
+                    </div>
+                    <div class="story-content-image image02">
+                      <img src="images/toy05.svg" />
+                    </div>
+                    <div
+                      class="story-content-carousel carousel-icon sm previous"
+                    ></div>
+                    <div
+                      class="story-content-carousel carousel-icon sm next"
+                    ></div>
+                    <!-- desktop show two story courses -->
+                    <!-- under show one story course -->
+                    <!-- need to implement by js for carousel -->
+                    <div class="story-course-wrapper">
+                      <div class="story-course">
+                        <div class="story-course-image">
+                          <img src="images/toy03.png" />
                         </div>
-                        <p class="course-card-info-content-text">
-                          Conversation About: Meeting New People
-                        </p>
-                        <div class="course-card-info-content-teacher">
-                          <div class="course-card-info-content-teacher-avatar">
-                            <img src="images/teacher_img.png" />
+                        <div class="story-course-card">
+                          <div class="story-course-card-info">
+                            <p class="story-course-card-info-time">
+                              2021/9/14 13:30
+                            </p>
+                            <p class="story-course-card-info-name">
+                              Conversation About: Meeting New People
+                            </p>
+                            <div class="story-course-card-teacher">
+                              <p class="story-course-card-teacher-name">
+                                Karla C
+                              </p>
+                              <div class="story-course-card-teacher-avatar">
+                                <img src="images/teacher_img.png" />
+                              </div>
+                            </div>
                           </div>
-                          <p class="course-card-info-content-teacher-name">
-                            Karla C
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="course-card-action">
-                      <button class="button xs">
-                        <img class="button-icon" src="images/btn_hw.svg" />
-                        <p>課後作業</p>
-                      </button>
-                      <button class="button xs">
-                        <img class="button-icon" src="images/btn_review.svg" />
-                        <p>複習課程</p>
-                      </button>
-                      <button class="button sm">
-                        <img class="button-icon" src="images/btn_again.svg" />
-                        <p>再學一次</p>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="lesson-enhance">
-              <div class="lesson-enhance-title">
-                <p class="lesson-enhance-title-text">本週加強課程</p>
-              </div>
-              <div class="lesson-enhance-course">
-                <div class="course enhance">
-                  <div class="course-info">
-                    <div class="course-info-content">
-                      <div class="course-info-content-status">
-                        <div class="course-info-content-status-check">
-                          <img src="images/check.svg" />
-                        </div>
-                        <p class="course-info-content-status-text">已出席</p>
-                      </div>
-                      <div class="course-info-content-time">
-                        <p class="date">2021/9/18</p>
-                        <p class="time">18:30</p>
-                      </div>
-                    </div>
-                    <div class="course-info-divider"></div>
-                  </div>
-                  <div class="course-card">
-                    <div class="course-card-info">
-                      <div class="course-card-info-image">
-                        <img src="images/course_img.png" />
-                      </div>
-                      <div class="course-card-info-content">
-                        <div class="course-card-info-content-tag">
-                          <p>一年級</p>
-                          <p>45 mins</p>
-                          <p>CCSS</p>
-                          <p>一對四</p>
-                        </div>
-                        <p class="course-card-info-content-text">
-                          Conversation About: Meeting New People
-                        </p>
-                        <div class="course-card-info-content-teacher">
-                          <div class="course-card-info-content-teacher-avatar">
-                            <img src="images/teacher_img.png" />
+                          <div class="story-course-card-image">
+                            <img src="images/course_img.png" />
                           </div>
-                          <p class="course-card-info-content-teacher-name">
-                            Karla C
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="course-card-action">
-                      <button class="button xs">
-                        <img class="button-icon" src="images/btn_hw.svg" />
-                        <p>課後作業</p>
-                      </button>
-                      <button class="button xs">
-                        <img class="button-icon" src="images/btn_review.svg" />
-                        <p>複習課程</p>
-                      </button>
-                      <button class="button sm">
-                        <img class="button-icon" src="images/btn_again.svg" />
-                        <p>再學一次</p>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="course enhance">
-                  <div class="course-info">
-                    <div class="course-info-content">
-                      <div class="course-info-content-status">
-                        <div class="course-info-content-status-check">
-                          <img src="images/check.svg" />
-                        </div>
-                        <p class="course-info-content-status-text">已出席</p>
-                      </div>
-                      <div class="course-info-content-time">
-                        <p class="date">2021/9/18</p>
-                        <p class="time">18:30</p>
-                      </div>
-                    </div>
-                    <div class="course-info-divider"></div>
-                  </div>
-                  <div class="course-card">
-                    <div class="course-card-info">
-                      <div class="course-card-info-image">
-                        <img src="images/course_img.png" />
-                      </div>
-                      <div class="course-card-info-content">
-                        <div class="course-card-info-content-tag">
-                          <p>一年級</p>
-                          <p>45 mins</p>
-                          <p>CCSS</p>
-                          <p>一對四</p>
-                        </div>
-                        <p class="course-card-info-content-text">
-                          Conversation About: Meeting New People
-                        </p>
-                        <div class="course-card-info-content-teacher">
-                          <div class="course-card-info-content-teacher-avatar">
-                            <img src="images/teacher_img.png" />
+                          <div class="story-course-card-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                            <p>CCSS</p>
+                            <p>一對四</p>
                           </div>
-                          <p class="course-card-info-content-teacher-name">
-                            Karla C
-                          </p>
+                          <button class="button lg">
+                            <img
+                              class="button-icon"
+                              src="images/btn_booking.svg"
+                            />
+                            <p>預定課程</p>
+                          </button>
                         </div>
                       </div>
                     </div>
-                    <div class="course-card-action">
-                      <button class="button xs">
-                        <img class="button-icon" src="images/btn_hw.svg" />
-                        <p>課後作業</p>
-                      </button>
-                      <button class="button xs">
-                        <img class="button-icon" src="images/btn_review.svg" />
-                        <p>複習課程</p>
-                      </button>
-                      <button class="button sm">
-                        <img class="button-icon" src="images/btn_again.svg" />
-                        <p>再學一次</p>
-                      </button>
+                    <div class="story-course-wrapper">
+                      <div class="story-course">
+                        <div class="story-course-image">
+                          <img src="images/toy03.png" />
+                        </div>
+                        <div class="story-course-card">
+                          <div class="story-course-card-info">
+                            <p class="story-course-card-info-time">
+                              2021/9/14 13:30
+                            </p>
+                            <p class="story-course-card-info-name">
+                              Conversation About: Meeting New People
+                            </p>
+                            <div class="story-course-card-teacher">
+                              <p class="story-course-card-teacher-name">
+                                Karla C
+                              </p>
+                              <div class="story-course-card-teacher-avatar">
+                                <img src="images/teacher_img.png" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="story-course-card-image">
+                            <img src="images/course_img.png" />
+                          </div>
+                          <div class="story-course-card-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                            <p>CCSS</p>
+                            <p>一對四</p>
+                          </div>
+                          <button class="button lg">
+                            <img
+                              class="button-icon"
+                              src="images/btn_booking.svg"
+                            />
+                            <p>預定課程</p>
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -993,105 +1726,120 @@
             </div>
           </div>
 
-          <div class="story">
-            <div class="story-header">
-              <div class="story-header-image toy01">
-                <img class="story-header-image-item" src="images/toy01.png" />
-              </div>
-              <div class="story-header-title">
-                <div class="story-header-title-image">
-                  <img src="images/sps_title.svg" />
+          <div class="clear"></div>
+          <div class="footer">
+            <div class="foo_1">
+              <div class="foo_a1">
+                <div class="foo_a1_f1"></div>
+                <div class="foo_a1_f2">客户保护中心</div>
+                <div class="foo_a1_f3">有任何问题吗？欢迎随时询问。</div>
+                <div class="foo_a1_f3">
+                  <span><a href="#">4006-30-30-30</a></span>
+                  I
+                  <span><a href="#">線上客服</a></span>
                 </div>
-                <div class="story-header-title-text">迪士尼故事館</div>
               </div>
-              <div class="story-header-image toy02">
-                <img class="story-header-image-item" src="images/toy02.png" />
+              <div class="foo_a2">
+                <div class="foo_a1_f4"></div>
+                <div class="foo_a1_f2">新手包</div>
+                <div class="foo_a1_f5">
+                  <a href="faq.html">常见问答</a>
+                  <a href="teaching.html">新手影片教学</a
+                  ><a
+                    href="http://www.vipabc.com/App/App?type=1"
+                    target="_blank"
+                    >下载学习App</a
+                  ><a href="intro.html">教学平台介绍</a
+                  ><a href="#">關闭快显封锁</a
+                  ><a href="navigation.html">新版地图</a>
+                </div>
+              </div>
+              <div class="foo_a3">
+                <div class="foo_spa"></div>
+                <div class="foo_a1_f6">VIPABC</div>
+                <div class="foo_a1_f7">
+                  <a
+                    href="http://www.vipabc.com/About/AboutVIPABC"
+                    target="_blank"
+                    >关于VIPABC</a
+                  >
+                  <a href="http://www.vipabc.com/Home/Privacy" target="_blank"
+                    >隐私保护</a
+                  >
+                  <a href="http://www.vipabc.com/Home/Security" target="_blank"
+                    >安全条款</a
+                  >
+                  <a href="http://www.vipabc.com/Home/Service" target="_blank"
+                    >服务条款</a
+                  >
+                </div>
+                <div class="foo_a1_f7">
+                  <a
+                    href="http://www.vipabc.com/program/recruit/index.asp?"
+                    target="_blank"
+                    >诚征英才</a
+                  ><a href="http://www.vipabc.com/biz" target="_blank"
+                    >企业培训</a
+                  ><a
+                    href="http://www.vipabc.com/Home/ContactUs"
+                    target="_blank"
+                    >联络我们</a
+                  >
+                </div>
               </div>
             </div>
-            <div class="story-content">
-              <div class="story-content-image image01">
-                <img src="images/toy04.svg" />
-              </div>
-              <div class="story-content-image image02">
-                <img src="images/toy05.svg" />
-              </div>
-              <div
-                class="story-content-carousel carousel-icon sm previous"
-              ></div>
-              <div class="story-content-carousel carousel-icon sm next"></div>
-              <!-- desktop show two story courses -->
-              <!-- under show one story course -->
-              <!-- need to implement by js for carousel -->
-              <div class="story-course-wrapper">
-                <div class="story-course">
-                  <div class="story-course-image">
-                    <img src="images/toy03.png" />
-                  </div>
-                  <div class="story-course-card">
-                    <div class="story-course-card-info">
-                      <p class="story-course-card-info-time">2021/9/14 13:30</p>
-                      <p class="story-course-card-info-name">
-                        Conversation About: Meeting New People
-                      </p>
-                      <div class="story-course-card-teacher">
-                        <p class="story-course-card-teacher-name">Karla C</p>
-                        <div class="story-course-card-teacher-avatar">
-                          <img src="images/teacher_img.png" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="story-course-card-image">
-                      <img src="images/course_img.png" />
-                    </div>
-                    <div class="story-course-card-tag">
-                      <p>一年級</p>
-                      <p>45 mins</p>
-                      <p>CCSS</p>
-                      <p>一對四</p>
-                    </div>
-                    <button class="button lg">
-                      <img class="button-icon" src="images/btn_booking.svg" />
-                      <p>預定課程</p>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="story-course-wrapper">
-                <div class="story-course">
-                  <div class="story-course-image">
-                    <img src="images/toy03.png" />
-                  </div>
-                  <div class="story-course-card">
-                    <div class="story-course-card-info">
-                      <p class="story-course-card-info-time">2021/9/14 13:30</p>
-                      <p class="story-course-card-info-name">
-                        Conversation About: Meeting New People
-                      </p>
-                      <div class="story-course-card-teacher">
-                        <p class="story-course-card-teacher-name">Karla C</p>
-                        <div class="story-course-card-teacher-avatar">
-                          <img src="images/teacher_img.png" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="story-course-card-image">
-                      <img src="images/course_img.png" />
-                    </div>
-                    <div class="story-course-card-tag">
-                      <p>一年級</p>
-                      <p>45 mins</p>
-                      <p>CCSS</p>
-                      <p>一對四</p>
-                    </div>
-                    <button class="button lg">
-                      <img class="button-icon" src="images/btn_booking.svg" />
-                      <p>預定課程</p>
-                    </button>
-                  </div>
-                </div>
-              </div>
+            <div class="foo_2">
+              <span
+                ><img
+                  src="images/ico_pa1.png"
+                  width="25"
+                  height="25"
+                />中国互联网诚信联盟</span
+              >
+              <span
+                ><img
+                  src="images/ico_pa2.png"
+                  width="25"
+                  height="25"
+                />网上交易保障中心</span
+              >
+              <span
+                ><img
+                  src="images/ico_pa3.png"
+                  width="25"
+                  height="25"
+                />可信网站认证</span
+              >
+              <span
+                ><img
+                  src="images/ico_pa4.png"
+                  width="25"
+                  height="25"
+                />诚信网站认证</span
+              >
+              <span
+                ><img
+                  src="images/ico_pa5.png"
+                  width="25"
+                  height="25"
+                />经营性网站备案信息</span
+              >
+              <span
+                ><img
+                  src="images/ico_pa6.png"
+                  width="25"
+                  height="25"
+                />安全联盟</span
+              >
+            </div>
+            <div class="foo_3">
+              经营许可 : 教职成司函[2011]267号 | 京ICP证090121号 |
+              京ICP备11004351号 | 京公网安备110105019074号 | 网络文化经营许可证
+              京网文[2014]0063-0013号<br />
+              VIPABC.com 版权所有 © 2008-2014 全球领先英语真人外教网
             </div>
           </div>
+          <div class="clear"></div>
         </div>
       </div>
     </div>

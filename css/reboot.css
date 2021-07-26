@@ -73,7 +73,7 @@ td {
 }
 html,
 body {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   height: 100%;
   position: relative;
   font-family: "Roboto", "NotoSansMonoCJKTC", "Microsoft JhengHei", PingFang,

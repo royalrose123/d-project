@@ -379,8 +379,12 @@
     max-width: 100%;
   }
 }
-
-.footer {
-  box-sizing: content-box;
-}
 /* end */
+
+/* 因為"我的課程"都是用 box-sizing: border-box，但其他頁面並不是
+   只好透過 layout 去設定 box-sizing
+   不然一般會寫在 reboot 裡   
+*/
+.layout {
+  box-sizing: border-box;
+}
