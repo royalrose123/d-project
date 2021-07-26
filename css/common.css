@@ -351,14 +351,24 @@
 但開的版面跟"我的課程"有些微差距
 透過這裡調整"我的課程"的 header 跟 footer */
 /* start */
+.header_in {
+  width: 100%;
+}
+
 .header_m {
-  width: 1396px;
+  width: 100%;
+  max-width: 1396px;
   padding: 0px 1vw;
+}
+
+.header_menu {
+  width: auto;
 }
 
 @media (max-width: 1024px) {
   .header_m {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     padding-left: 12px;
     padding-right: 12px;
   }
@@ -366,7 +376,7 @@
 
 @media (max-width: 768px) {
   .header_m {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
