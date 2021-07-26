@@ -1,11 +1,11 @@
-.container {
+.class-container {
   width: 100%;
   max-width: 1440px;
   padding: 108px 80px;
 }
 
 @media (max-width: 767px) {
-  .container {
+  .class-container {
     padding: 40px 20px;
   }
 }

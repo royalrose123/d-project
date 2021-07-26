@@ -1,0 +1,253 @@
+.dcgs_f1{
+	background:url(../images/dcgs/a1.jpg) no-repeat;
+	background-size:contain;
+	}
+#user_photo{
+	/*background-image:url(../images/photo.jpg);
+	background-size:cover;
+    background-position:center center;*/
+	}
+#user_photo img {
+	width: 100%;
+	border-radius: 50%;
+}
+#ce_ph_1{
+	background:url(../images/ce_ph_1.png) no-repeat;
+	background-size:contain;
+	}
+#ce_ph_2{
+	background:url(../images/ce_ph_2.png) no-repeat;
+	background-size:contain;
+	}
+#ce_ph_3{
+	background:url(../images/ce_ph_3.png) no-repeat;
+	background-size:contain;
+	}
+#ce_ph_4{
+	background:url(../images/ce_ph_4.png) no-repeat;
+	background-size:contain;
+	}
+#ce_ph_5{
+	background:url(../images/ce_ph_5.png) no-repeat;
+	background-size:contain;
+	overflow: hidden;
+	}
+#ce_ph_6{
+	background:url(../images/ce_ph_6.png) no-repeat;
+	background-size:contain;
+	}
+#ce_teacher_1{
+	/*
+	background:url(../images/ce_teacher_1.png) no-repeat;
+	background-size:contain;*/
+	}
+#ce_teacher_2{
+	/*
+	background:url(../images/ce_teacher_2.png) no-repeat;
+	background-size:contain;*/
+	}
+#ce_teacher_3{
+	/*
+	background:url(../images/ce_teacher_3.png) no-repeat;
+	background-size:contain;*/
+	}
+#ce_teacher_4{
+	/*
+	background:url(../images/ce_teacher_4.png) no-repeat;
+	background-size:contain;*/
+	}
+#ce_teacher_5{
+	/*
+	background:url(../images/ce_teacher_5.png) no-repeat;
+	background-size:contain;*/
+	}
+#avator_teacher_f_00{
+	
+	background:url(../images/avator_teacher_f_00.png) no-repeat;
+	background-size:contain;
+	}
+#avator_teacher_m_00{
+	background:url(../images/avator_teacher_m_00.png) no-repeat;
+	background-size:contain;
+	}
+#ico_invo{
+	background:url(../images/ico_invo.png) no-repeat;
+	background-size:contain;
+	}
+#app_ph1{
+	/*
+	background:url(../images/ico_app.png) no-repeat;
+	background-size:contain;
+	background-position:center;*/
+	}
+/********徽章********/
+#badge1{
+	/*
+	background:url(../images/badges_c_001.png) no-repeat;
+	background-size:contain;
+	background-position:center center;*/
+	}
+#badge2{
+	/*
+	background:url(../images/badges_c_002.png) no-repeat;
+	background-size:contain;
+	background-position:center center;*/
+	}
+#badge3{
+	/*
+	background:url(../images/badges_c_003.png) no-repeat;
+	background-size:contain;
+	background-position:center center;*/
+	}
+/********課程圖示********/
+#class_tit_1{
+	background:url(../images/ico_class_1.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+#class_tit_2{
+	background:url(../images/ico_class_2.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+#class_tit_3{
+	background:url(../images/ico_class_3.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+#class_tit_4{
+	background:url(../images/ico_class_4.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+#class_tit_listview{
+	/*
+	background:url(../images/ico_listview.png) no-repeat;
+	background-size:contain;
+	background-position:center center;*/
+	}
+#class_tit_track{
+	background:url(../images/ico_track.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+#class_tit_trianing{
+	background:url(../images/ico_trianing.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+#class_network{
+	background:url(../images/ico_network.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+#class_1{
+	background:url(../images/ico_class_1a.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	} 
+#class_2{
+	background:url(../images/ico_class_2a.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+#class_3{
+	background:url(../images/ico_class_3a.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+#class_4{
+	background:url(../images/ico_class_4a.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+.class_now{
+	background:url(../images/ico_now.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+.color54c2c1{
+	color:#54c2c1;
+	}
+.colorffcc3f{
+	color:#ffcc3f;
+	}
+.colorfe913e{
+	color:#fe913e;
+	}
+.colorf75c5c{
+	color:#ed4c7c;
+	}
+.colorba2964{
+	color:#ba2964;
+	}
+#ico_track_f1{
+	/*
+	background:url(../images/avator_default_00.png) no-repeat;
+	background-size:contain;
+	background-position:center center;*/
+	}
+#ico_track_f2{
+	/*
+	background:url(../images/ico_track_f2a.png) no-repeat;
+	background-size:contain;
+	background-position:center center;*/
+	}
+#ico_track_f3{
+	background:url(../images/ico_track_f3a.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+#ico_track_f4{
+	background:url(../images/ico_track_f4a.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+#ico_video1{
+	/*
+	background:url(../images/ico_video1.png) no-repeat;
+	background-size:contain;
+	background-position:center center;*/
+	}
+#ico_video2{
+	background:url(../images/ico_video2.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+
+#class_tit_member{
+	/*
+	background:url(../images/ico_member.png) no-repeat;
+	background-size:contain;
+	background-position:center center;*/
+	}
+#ico_dcgs_1{
+	background:url(../images/ico_dcgs_1.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+#ico_dcgs_2{
+	background:url(../images/ico_dcgs_2.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+#ico_dcgs_3{
+	background:url(../images/ico_dcgs_3.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+#ico_dcgs_4{
+	background:url(../images/ico_dcgs_4.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+#ico_dcgs_5{
+	background:url(../images/ico_dcgs_5.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}
+#ico_dcgs_6{
+	background:url(../images/ico_dcgs_6.png) no-repeat;
+	background-size:contain;
+	background-position:center center;
+	}

@@ -345,3 +345,26 @@
   }
 }
 /* course-card - end */
+
+.header_m {
+  width: 1396px;
+  padding: 0px 1vw;
+}
+
+@media (max-width: 1024px) {
+  .header_m {
+    width: 1000px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header_m {
+    width: 100%;
+  }
+}
+
+.footer {
+  box-sizing: content-box;
+}

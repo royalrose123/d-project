@@ -3,17 +3,19 @@
   height: 100%;
   background-color: #e8f5ff;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
+  margin-bottom: -100px; /* 因為 footer 有 margin-bottom 100px */
 }
 
-.container {
+.class-container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1440px;
+  margin: 0px auto;
   padding: 108px 1vw;
 }
 
 @media (max-width: 767px) {
-  .container {
+  .class-container {
     padding: 60px 10px 108px 10px;
   }
 }
@@ -32,7 +34,7 @@
   display: flex;
   flex-direction: row;
   position: absolute;
-  top: 0px;
+  top: 80px;
   left: 0px;
   z-index: 99;
 }
@@ -80,6 +82,7 @@
 @media (max-width: 767px) {
   .my-class-header {
     height: 40px;
+    top: 60px;
   }
 
   .my-class-header-item {
@@ -147,7 +150,7 @@
     flex-direction: column;
     position: absolute;
     left: 0px;
-    top: 60px;
+    top: 80px;
   }
 
   .left[data-type=""] {
@@ -200,7 +203,7 @@
 
 @media (max-width: 767px) {
   .left {
-    top: 40px;
+    top: 100px;
   }
 
   .left-wrapper {
