@@ -346,6 +346,11 @@
 }
 /* course-card - end */
 
+/* 
+因為套用已寫好的 header 跟 footer
+但開的版面跟"我的課程"有些微差距
+透過這裡調整"我的課程"的 header 跟 footer */
+/* start */
 .header_m {
   width: 1396px;
   padding: 0px 1vw;
@@ -368,3 +373,4 @@
 .footer {
   box-sizing: content-box;
 }
+/* end */
