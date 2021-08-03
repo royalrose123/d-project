@@ -20,8 +20,6 @@
     <link rel="stylesheet" type="text/css" href="css/reboot.css" />
     <link rel="stylesheet" type="text/css" href="css/common.css" />
     <link rel="stylesheet" type="text/css" href="css/my_class.css" />
-    <link rel="stylesheet" href="css/nice-select2.css" />
-    <script src="js/nice-select2.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="js/framework.js"></script>
@@ -1593,6 +1591,141 @@
       </div>
     </div>
 
+    <div class="modal-layout">
+      <div class="update-modal">
+        <div class="modal-header">
+          <p class="modal-header-title">變更時間</p>
+          <div class="modal-header-underline"></div>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-body-header">
+            <p class="modal-body-header-title">原訂課程時間</p>
+            <p class="modal-body-header-time">2021/9/10 週三 20:00</p>
+          </div>
+
+          <div class="modal-tab">
+            <div class="modal-tab-item active">
+              <p class="modal-tab-item-text">固定時段</p>
+            </div>
+            <div class="modal-tab-item">
+              <p class="modal-tab-item-text">專屬時段</p>
+            </div>
+          </div>
+
+          <div class="modal-carousel">
+            <div class="carousel-icon xs previous"></div>
+            <div class="carousel-icon xs next"></div>
+            <div class="carousel-content">
+              <div class="carousel-content-date">
+                <div class="carousel-content-date-item">
+                  <p class="carousel-content-date-item-week">Mon</p>
+
+                  <div class="carousel-content-date-item-dot"></div>
+                  <p class="carousel-content-date-item-date">9/14</p>
+                </div>
+                <div class="carousel-content-date-item">
+                  <p class="carousel-content-date-item-week">Tue</p>
+                  <div class="carousel-content-date-item-dot"></div>
+                  <p class="carousel-content-date-item-date">9/15</p>
+                </div>
+                <div class="carousel-content-date-item">
+                  <p class="carousel-content-date-item-week">Wed</p>
+                  <div class="carousel-content-date-item-dot"></div>
+                  <p class="carousel-content-date-item-date">9/16</p>
+                </div>
+                <div class="carousel-content-date-item active">
+                  <p class="carousel-content-date-item-week">Thu</p>
+                  <div class="carousel-content-date-item-dot"></div>
+                  <p class="carousel-content-date-item-date">9/17</p>
+                </div>
+                <div class="carousel-content-date-item">
+                  <p class="carousel-content-date-item-week">Fri</p>
+                  <div class="carousel-content-date-item-dot"></div>
+                  <p class="carousel-content-date-item-date">9/18</p>
+                </div>
+                <div class="carousel-content-date-item">
+                  <p class="carousel-content-date-item-week">Sat</p>
+                  <div class="carousel-content-date-item-dot"></div>
+                  <p class="carousel-content-date-item-date">9/19</p>
+                </div>
+                <div class="carousel-content-date-item">
+                  <p class="carousel-content-date-item-week">Sun</p>
+                  <div class="carousel-content-date-item-dot"></div>
+                  <p class="carousel-content-date-item-date">9/20</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-time-picker">
+            <div class="modal-time-picker-item">
+              <p>01:30</p>
+            </div>
+            <div class="modal-time-picker-item">
+              <p>02:30</p>
+            </div>
+            <div class="modal-time-picker-item">
+              <p>03:30</p>
+            </div>
+            <div class="modal-time-picker-item">
+              <p>04:30</p>
+            </div>
+            <div class="modal-time-picker-item">
+              <p>05:30</p>
+            </div>
+            <div class="modal-time-picker-item active">
+              <p>06:30</p>
+            </div>
+            <div class="modal-time-picker-item">
+              <p>07:30</p>
+            </div>
+            <div class="modal-time-picker-item">
+              <p>08:30</p>
+            </div>
+            <div class="modal-time-picker-item">
+              <p>09:30</p>
+            </div>
+            <div class="modal-time-picker-item">
+              <p>10:30</p>
+            </div>
+            <div class="modal-time-picker-item">
+              <p>11:30</p>
+            </div>
+            <div class="modal-time-picker-item">
+              <p>12:30</p>
+            </div>
+            <div class="modal-time-picker-item">
+              <p>13:30</p>
+            </div>
+            <div class="modal-time-picker-item">
+              <p>14:30</p>
+            </div>
+          </div>
+
+          <div class="update-time">
+            <p class="update-time-title">修改課程時間</p>
+            <p class="update-time-time">2021/9/17 週三 06:30</p>
+          </div>
+
+          <div class="modal-action">
+            <button class="modal-action-button button lg">
+              <p>取消</p>
+            </button>
+            <button class="modal-action-button button lg">
+              <p>確定</p>
+            </button>
+          </div>
+
+          <div class="modal-comment">
+            <p>無適合的時間嗎？</p>
+            <p>我們可另外為您開專屬課程喔，僅須收取４堂</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(["_setAccount", "UA-36251023-1"]);
@@ -1657,15 +1790,6 @@
             layoutElement.dataset.type = itemType;
           }
         });
-      });
-    </script>
-
-    <script>
-      // 有用到 select 要加 classname 'select-tool' 才會套用 nice-select 的樣式
-      const elements = document.querySelectorAll(".select-tool");
-
-      elements.forEach(function (select) {
-        NiceSelect.bind(select);
       });
     </script>
   </body>

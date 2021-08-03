@@ -1,10 +1,11 @@
-.layout {
+.modal-layout {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #505050;
+  background-color: rgba(0,0,0,.8);
+  box-sizing: border-box;
 }
 
 @media (max-width: 767px) {
@@ -13,19 +14,19 @@
   }
 }
 
-.update-level-modal {
+.update-modal {
   width: 100%;
   max-width: 700px;
-  min-height: 486px;
   background-color: #ffffff;
   border-radius: 20px;
   overflow-x: hidden;
   overflow-y: auto;
+  padding-bottom: 40px;
 }
 
 /* update-level-modal rwd */
 @media (max-width: 767px) {
-  .update-level-modal {
+  .update-modal {
     max-width: 100%;
     min-height: 100%;
     height: 100%;
@@ -33,7 +34,7 @@
   }
 }
 
-.header {
+.modal-header {
   width: 100%;
   height: 100px;
   display: flex;
@@ -43,58 +44,58 @@
   background-color: #fc8aac;
 }
 
-.header-title {
+.modal-header-title {
   color: #ffffff;
   font-size: 30px;
   margin-bottom: 8px;
 }
 
-.header-underline {
+.modal-header-underline {
   width: 45px;
   border-bottom: 5px solid #ffffff;
 }
 
 /* header rwd */
 @media (max-width: 767px) {
-  .header {
+  .modal-header {
     height: 72px;
   }
-  .header-title {
+  .modal-header-title {
     font-size: 24px;
   }
 }
 
-.body {
+.modal-body {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 36px;
 }
 
-.body-text {
+.update-level-text {
   font-size: 16px;
   color: #707070;
 }
 
-.question {
+.update-level-text.question {
+  margin-top: 36px;
   margin-bottom: 28px;
 }
 
-.level-title {
+.update-level-text.level-title {
 }
 
-.level-text {
+.update-level-text.level-text {
   color: #fc8aac;
   font-size: 24px;
 }
 
-.update-level {
+.update-level-text.update-level {
   margin-top: 20px;
 }
 
-.action {
+.modal-action {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -103,7 +104,7 @@
   margin-top: 50px;
 }
 
-.action-button {
+.modal-action-button {
   margin: 0px 8px;
 }
 
