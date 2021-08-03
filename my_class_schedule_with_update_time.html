@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="renderer" content="webkit" />
@@ -19,28 +19,16 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.pageslide.css" />
     <link rel="stylesheet" type="text/css" href="css/reboot.css" />
     <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal.css" />
     <link rel="stylesheet" type="text/css" href="css/my_class.css" />
+
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="js/framework.js"></script>
     <script src="js/jquery.easy-pie-chart.js"></script>
     <script src="js/jquery-ui.js"></script>
-
-    <!--[if gte IE 8]>
-      <script type="text/javascript" src="js/html5shiv.js"></script>
-      <script type="text/javascript" src="js/excanvas.js"></script>
-      <link rel="stylesheet" type="text/css" href="css/ie8Index.css" />
-    <![endif]-->
-    <!--[if lt IE 8]>
-      <link rel="stylesheet" type="text/css" href="css/ie8_lt.css" />
-    <![endif]-->
   </head>
-  <!--[if lt IE 8]><body class="ie8-lt"><![endif]-->
-  <!--[if (gte IE 8)&(lt IE 10)]><body class="ie"><![endif]-->
-  <!--[if !IE]>-->
   <body>
-    <!--<![endif]-->
-
     <div class="browser_in">
       <table
         width="100%"
@@ -428,7 +416,7 @@
                   <p>預訂課程</p>
                 </div>
               </div>
-              <div id="left" class="left">
+              <div id="left" class="left" data-type="schedule">
                 <div class="left-wrapper">
                   <div class="calendar">
                     <span class="calendar-title">課程行事曆</span>
@@ -927,6 +915,273 @@
                       <div class="banner-dot-item"></div>
                       <div class="banner-dot-item"></div>
                       <div class="banner-dot-item"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="left-popup schedule">
+                  <div class="schedule-top">
+                    <img src="images/icon-1.svg" />
+                  </div>
+                  <div class="schedule-wrapper">
+                    <div class="schedule-item">
+                      <div class="schedule-item-header">
+                        <p>2021/9/12 星期日</p>
+                      </div>
+                      <div class="schedule-item-course">
+                        <div class="schedule-item-course-left">
+                          <p class="schedule-item-course-left-time">13:30</p>
+                          <div class="schedule-item-course-left-divider"></div>
+                        </div>
+                        <div class="schedule-item-course-right">
+                          <div class="schedule-item-course-right-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                          </div>
+                          <p class="schedule-item-course-right-name">
+                            牛津一對一
+                          </p>
+                          <div class="schedule-item-course-right-teacher">
+                            <div
+                              class="schedule-item-course-right-teacher-avatar"
+                            >
+                              <img src="images/teacher_img.png" />
+                            </div>
+                            <p class="schedule-item-course-right-teacher-name">
+                              Diana V.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="schedule-item">
+                      <div class="schedule-item-header">
+                        <p>2021/9/12 星期日</p>
+                      </div>
+                      <div class="schedule-item-course">
+                        <div class="schedule-item-course-left">
+                          <p class="schedule-item-course-left-time">13:30</p>
+                          <div class="schedule-item-course-left-divider"></div>
+                        </div>
+                        <div class="schedule-item-course-right">
+                          <div class="schedule-item-course-right-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                          </div>
+                          <p class="schedule-item-course-right-name">
+                            牛津一對一
+                          </p>
+                          <div class="schedule-item-course-right-teacher">
+                            <div
+                              class="schedule-item-course-right-teacher-avatar"
+                            >
+                              <img src="images/teacher_img.png" />
+                            </div>
+                            <p class="schedule-item-course-right-teacher-name">
+                              Diana V.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="schedule-item-course">
+                        <div class="schedule-item-course-left">
+                          <p class="schedule-item-course-left-time">18:30</p>
+                          <div class="schedule-item-course-left-divider"></div>
+                        </div>
+                        <div class="schedule-item-course-right">
+                          <div class="schedule-item-course-right-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                          </div>
+                          <p class="schedule-item-course-right-name">
+                            牛津一對一
+                          </p>
+                          <div class="schedule-item-course-right-teacher">
+                            <div
+                              class="schedule-item-course-right-teacher-avatar"
+                            >
+                              <img src="images/teacher_img.png" />
+                            </div>
+                            <p class="schedule-item-course-right-teacher-name">
+                              Diana V.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="schedule-item">
+                      <div class="schedule-item-header">
+                        <p>2021/9/12 星期日</p>
+                      </div>
+                      <div class="schedule-item-course">
+                        <div class="schedule-item-course-left">
+                          <p class="schedule-item-course-left-time">13:30</p>
+                          <div class="schedule-item-course-left-divider"></div>
+                        </div>
+                        <div class="schedule-item-course-right">
+                          <div class="schedule-item-course-right-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                          </div>
+                          <p class="schedule-item-course-right-name">
+                            牛津一對一
+                          </p>
+                          <div class="schedule-item-course-right-teacher">
+                            <div
+                              class="schedule-item-course-right-teacher-avatar"
+                            >
+                              <img src="images/teacher_img.png" />
+                            </div>
+                            <p class="schedule-item-course-right-teacher-name">
+                              Diana V.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="schedule-item">
+                      <div class="schedule-item-header">
+                        <p>2021/9/12 星期日</p>
+                      </div>
+                      <div class="schedule-item-course">
+                        <div class="schedule-item-course-left">
+                          <p class="schedule-item-course-left-time">13:30</p>
+                          <div class="schedule-item-course-left-divider"></div>
+                        </div>
+                        <div class="schedule-item-course-right">
+                          <div class="schedule-item-course-right-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                          </div>
+                          <p class="schedule-item-course-right-name">
+                            牛津一對一
+                          </p>
+                          <div class="schedule-item-course-right-teacher">
+                            <div
+                              class="schedule-item-course-right-teacher-avatar"
+                            >
+                              <img src="images/teacher_img.png" />
+                            </div>
+                            <p class="schedule-item-course-right-teacher-name">
+                              Diana V.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="schedule-item-course">
+                        <div class="schedule-item-course-left">
+                          <p class="schedule-item-course-left-time">18:30</p>
+                          <div class="schedule-item-course-left-divider"></div>
+                        </div>
+                        <div class="schedule-item-course-right">
+                          <div class="schedule-item-course-right-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                          </div>
+                          <p class="schedule-item-course-right-name">
+                            牛津一對一
+                          </p>
+                          <div class="schedule-item-course-right-teacher">
+                            <div
+                              class="schedule-item-course-right-teacher-avatar"
+                            >
+                              <img src="images/teacher_img.png" />
+                            </div>
+                            <p class="schedule-item-course-right-teacher-name">
+                              Diana V.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="schedule-item">
+                      <div class="schedule-item-header">
+                        <p>2021/9/12 星期日</p>
+                      </div>
+                      <div class="schedule-item-course">
+                        <div class="schedule-item-course-left">
+                          <p class="schedule-item-course-left-time">13:30</p>
+                          <div class="schedule-item-course-left-divider"></div>
+                        </div>
+                        <div class="schedule-item-course-right">
+                          <div class="schedule-item-course-right-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                          </div>
+                          <p class="schedule-item-course-right-name">
+                            牛津一對一
+                          </p>
+                          <div class="schedule-item-course-right-teacher">
+                            <div
+                              class="schedule-item-course-right-teacher-avatar"
+                            >
+                              <img src="images/teacher_img.png" />
+                            </div>
+                            <p class="schedule-item-course-right-teacher-name">
+                              Diana V.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="schedule-item">
+                      <div class="schedule-item-header">
+                        <p>2021/9/12 星期日</p>
+                      </div>
+                      <div class="schedule-item-course">
+                        <div class="schedule-item-course-left">
+                          <p class="schedule-item-course-left-time">13:30</p>
+                          <div class="schedule-item-course-left-divider"></div>
+                        </div>
+                        <div class="schedule-item-course-right">
+                          <div class="schedule-item-course-right-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                          </div>
+                          <p class="schedule-item-course-right-name">
+                            牛津一對一
+                          </p>
+                          <div class="schedule-item-course-right-teacher">
+                            <div
+                              class="schedule-item-course-right-teacher-avatar"
+                            >
+                              <img src="images/teacher_img.png" />
+                            </div>
+                            <p class="schedule-item-course-right-teacher-name">
+                              Diana V.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="schedule-item-course">
+                        <div class="schedule-item-course-left">
+                          <p class="schedule-item-course-left-time">18:30</p>
+                          <div class="schedule-item-course-left-divider"></div>
+                        </div>
+                        <div class="schedule-item-course-right">
+                          <div class="schedule-item-course-right-tag">
+                            <p>一年級</p>
+                            <p>45 mins</p>
+                          </div>
+                          <p class="schedule-item-course-right-name">
+                            牛津一對一
+                          </p>
+                          <div class="schedule-item-course-right-teacher">
+                            <div
+                              class="schedule-item-course-right-teacher-avatar"
+                            >
+                              <img src="images/teacher_img.png" />
+                            </div>
+                            <p class="schedule-item-course-right-teacher-name">
+                              Diana V.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1470,123 +1725,122 @@
                 </div>
               </div>
             </div>
-            <div class="clear"></div>
-            <div class="footer">
-              <div class="foo_1">
-                <div class="foo_a1">
-                  <div class="foo_a1_f1"></div>
-                  <div class="foo_a1_f2">客户保护中心</div>
-                  <div class="foo_a1_f3">有任何问题吗？欢迎随时询问。</div>
-                  <div class="foo_a1_f3">
-                    <span><a href="#">4006-30-30-30</a></span>
-                    I
-                    <span><a href="#">線上客服</a></span>
-                  </div>
-                </div>
-                <div class="foo_a2">
-                  <div class="foo_a1_f4"></div>
-                  <div class="foo_a1_f2">新手包</div>
-                  <div class="foo_a1_f5">
-                    <a href="faq.html">常见问答</a>
-                    <a href="teaching.html">新手影片教学</a
-                    ><a
-                      href="http://www.vipabc.com/App/App?type=1"
-                      target="_blank"
-                      >下载学习App</a
-                    ><a href="intro.html">教学平台介绍</a
-                    ><a href="#">關闭快显封锁</a
-                    ><a href="navigation.html">新版地图</a>
-                  </div>
-                </div>
-                <div class="foo_a3">
-                  <div class="foo_spa"></div>
-                  <div class="foo_a1_f6">VIPABC</div>
-                  <div class="foo_a1_f7">
-                    <a
-                      href="http://www.vipabc.com/About/AboutVIPABC"
-                      target="_blank"
-                      >关于VIPABC</a
-                    >
-                    <a href="http://www.vipabc.com/Home/Privacy" target="_blank"
-                      >隐私保护</a
-                    >
-                    <a
-                      href="http://www.vipabc.com/Home/Security"
-                      target="_blank"
-                      >安全条款</a
-                    >
-                    <a href="http://www.vipabc.com/Home/Service" target="_blank"
-                      >服务条款</a
-                    >
-                  </div>
-                  <div class="foo_a1_f7">
-                    <a
-                      href="http://www.vipabc.com/program/recruit/index.asp?"
-                      target="_blank"
-                      >诚征英才</a
-                    ><a href="http://www.vipabc.com/biz" target="_blank"
-                      >企业培训</a
-                    ><a
-                      href="http://www.vipabc.com/Home/ContactUs"
-                      target="_blank"
-                      >联络我们</a
-                    >
-                  </div>
+          </div>
+
+          <div class="clear"></div>
+          <div class="footer">
+            <div class="foo_1">
+              <div class="foo_a1">
+                <div class="foo_a1_f1"></div>
+                <div class="foo_a1_f2">客户保护中心</div>
+                <div class="foo_a1_f3">有任何问题吗？欢迎随时询问。</div>
+                <div class="foo_a1_f3">
+                  <span><a href="#">4006-30-30-30</a></span>
+                  I
+                  <span><a href="#">線上客服</a></span>
                 </div>
               </div>
-              <div class="foo_2">
-                <span
-                  ><img
-                    src="images/ico_pa1.png"
-                    width="25"
-                    height="25"
-                  />中国互联网诚信联盟</span
-                >
-                <span
-                  ><img
-                    src="images/ico_pa2.png"
-                    width="25"
-                    height="25"
-                  />网上交易保障中心</span
-                >
-                <span
-                  ><img
-                    src="images/ico_pa3.png"
-                    width="25"
-                    height="25"
-                  />可信网站认证</span
-                >
-                <span
-                  ><img
-                    src="images/ico_pa4.png"
-                    width="25"
-                    height="25"
-                  />诚信网站认证</span
-                >
-                <span
-                  ><img
-                    src="images/ico_pa5.png"
-                    width="25"
-                    height="25"
-                  />经营性网站备案信息</span
-                >
-                <span
-                  ><img
-                    src="images/ico_pa6.png"
-                    width="25"
-                    height="25"
-                  />安全联盟</span
-                >
+              <div class="foo_a2">
+                <div class="foo_a1_f4"></div>
+                <div class="foo_a1_f2">新手包</div>
+                <div class="foo_a1_f5">
+                  <a href="faq.html">常见问答</a>
+                  <a href="teaching.html">新手影片教学</a
+                  ><a
+                    href="http://www.vipabc.com/App/App?type=1"
+                    target="_blank"
+                    >下载学习App</a
+                  ><a href="intro.html">教学平台介绍</a
+                  ><a href="#">關闭快显封锁</a
+                  ><a href="navigation.html">新版地图</a>
+                </div>
               </div>
-              <div class="foo_3">
-                经营许可 : 教职成司函[2011]267号 | 京ICP证090121号 |
-                京ICP备11004351号 | 京公网安备110105019074号 |
-                网络文化经营许可证 京网文[2014]0063-0013号<br />
-                VIPABC.com 版权所有 © 2008-2014 全球领先英语真人外教网
+              <div class="foo_a3">
+                <div class="foo_spa"></div>
+                <div class="foo_a1_f6">VIPABC</div>
+                <div class="foo_a1_f7">
+                  <a
+                    href="http://www.vipabc.com/About/AboutVIPABC"
+                    target="_blank"
+                    >关于VIPABC</a
+                  >
+                  <a href="http://www.vipabc.com/Home/Privacy" target="_blank"
+                    >隐私保护</a
+                  >
+                  <a href="http://www.vipabc.com/Home/Security" target="_blank"
+                    >安全条款</a
+                  >
+                  <a href="http://www.vipabc.com/Home/Service" target="_blank"
+                    >服务条款</a
+                  >
+                </div>
+                <div class="foo_a1_f7">
+                  <a
+                    href="http://www.vipabc.com/program/recruit/index.asp?"
+                    target="_blank"
+                    >诚征英才</a
+                  ><a href="http://www.vipabc.com/biz" target="_blank"
+                    >企业培训</a
+                  ><a
+                    href="http://www.vipabc.com/Home/ContactUs"
+                    target="_blank"
+                    >联络我们</a
+                  >
+                </div>
               </div>
             </div>
-            <div class="clear"></div>
+            <div class="foo_2">
+              <span
+                ><img
+                  src="images/ico_pa1.png"
+                  width="25"
+                  height="25"
+                />中国互联网诚信联盟</span
+              >
+              <span
+                ><img
+                  src="images/ico_pa2.png"
+                  width="25"
+                  height="25"
+                />网上交易保障中心</span
+              >
+              <span
+                ><img
+                  src="images/ico_pa3.png"
+                  width="25"
+                  height="25"
+                />可信网站认证</span
+              >
+              <span
+                ><img
+                  src="images/ico_pa4.png"
+                  width="25"
+                  height="25"
+                />诚信网站认证</span
+              >
+              <span
+                ><img
+                  src="images/ico_pa5.png"
+                  width="25"
+                  height="25"
+                />经营性网站备案信息</span
+              >
+              <span
+                ><img
+                  src="images/ico_pa6.png"
+                  width="25"
+                  height="25"
+                />安全联盟</span
+              >
+            </div>
+            <div class="foo_3">
+              经营许可 : 教职成司函[2011]267号 | 京ICP证090121号 |
+              京ICP备11004351号 | 京公网安备110105019074号 | 网络文化经营许可证
+              京网文[2014]0063-0013号<br />
+              VIPABC.com 版权所有 © 2008-2014 全球领先英语真人外教网
+            </div>
           </div>
+          <div class="clear"></div>
         </div>
       </div>
     </div>
@@ -1724,45 +1978,6 @@
         </div>
       </div>
     </div>
-
-
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(["_setAccount", "UA-36251023-1"]);
-      _gaq.push(["_setDomainName", "jqueryscript.net"]);
-      _gaq.push(["_trackPageview"]);
-
-      (function () {
-        var ga = document.createElement("script");
-        ga.type = "text/javascript";
-        ga.async = true;
-        ga.src =
-          ("https:" == document.location.protocol
-            ? "https://ssl"
-            : "http://www") + ".google-analytics.com/ga.js";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-    <script type="text/javascript">
-      var isOldIE = false;
-      var explorer = window.navigator.userAgent;
-      var b_version = navigator.appVersion;
-      var version = b_version.split(";");
-      if (version.length > 1) {
-        var trim_Version = version[1].replace(/[ ]/g, "");
-      }
-
-      if (explorer.indexOf("MSIE") >= 0) {
-        if (
-          trim_Version == "MSIE6.0" ||
-          trim_Version == "MSIE7.0" ||
-          trim_Version == "MSIE8.0"
-        ) {
-          isOldIE = true;
-        }
-      }
-    </script>
 
     <script>
       // 除了裝置寬度外，透過 left 的 data-type 決定顯示 schedule 或 reserve
